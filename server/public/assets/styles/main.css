@@ -1,17 +1,10 @@
 /*
-Error: Undefined variable: "$brown".
-        on line 13 of server/public/styles/sass/imports/_type.scss
+Error: Undefined variable: "$blue".
+        on line 99 of server/public/styles/sass/imports/_type.scss
         from line 9 of server/public/styles/sass/main.scss
 
-8: @import 'imports/grid';
-9: @import 'imports/type';
-10: 
-11: .test {
-12:   font-size: 12px;
-13: }
-
 Backtrace:
-server/public/styles/sass/imports/_type.scss:13
+server/public/styles/sass/imports/_type.scss:99
 server/public/styles/sass/main.scss:9
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
@@ -72,4 +65,4 @@ server/public/styles/sass/main.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$brown\".\A         on line 13 of server/public/styles/sass/imports/_type.scss\A         from line 9 of server/public/styles/sass/main.scss\A \A 8: @import 'imports/grid';\A 9: @import 'imports/type';\A 10: \A 11: .test {\A 12:   font-size: 12px;\A 13: }"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 99 of server/public/styles/sass/imports/_type.scss\A         from line 9 of server/public/styles/sass/main.scss"; }
