@@ -1,0 +1,13 @@
+@import 'imports/normalize';
+
+@import 'imports/config';
+
+@import 'imports/mixins';
+@import 'imports/responsive';
+
+@import 'imports/grid';
+@import 'imports/type';
+
+.test {
+  font-size: 12px;
+}
