@@ -358,12 +358,20 @@ th {
   padding: 0; }
 
 .panel {
-  height: 400px;
+  height: 700px;
   width: 100%;
-  padding: 90px 0; }
+  padding: 90px 0;
+  -webkit-box-shadow: 4px -4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px -4px 10px 0px rgba(0, 0, 0, 0.75); }
 
 .container {
   width: 70%; }
+
+.split {
+  display: block;
+  float: left;
+  width: 50%; }
 
 .clearfix,
 .group {
@@ -558,25 +566,65 @@ nav {
   background-color: rgba(209, 229, 80, 0.2);
   border: 1px #a0b41b solid; }
   nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     list-style-type: none; }
   nav li {
     display: block;
     float: left;
+    padding: 16px 0;
     width: 20%;
     color: #a0b41b;
     font-size: 24px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms; }
+    nav li:hover {
+      background-color: #a0b41b;
+      color: #e8e8e8;
+      cursor: pointer; }
+    nav li:active {
+      background-color: rgba(209, 229, 80, 0.2);
+      color: #a0b41b; }
 
-.name, .programs, .credentials {
+.name, .skills, .projects {
   background-color: #243333;
   color: #e8e8e8; }
 
 .profile, .experience, .clients {
-  background-color: #e8e8e8;
+  background: #e8e8e8 url("../images/bright-squares.png") repeat;
   color: #243333; }
 
 .name {
   height: 500px;
   padding-top: 200px; }
+  .name .tagline {
+    width: 45%;
+    height: 200px;
+    margin: 20px auto;
+    font-family: 'Unkempt', serif; }
+    .name .tagline p, .name .tagline .first, .name .tagline .period {
+      margin: 0;
+      text-align: right; }
+    .name .tagline .story-container {
+      display: block;
+      float: left;
+      width: 31%;
+      padding-right: 1%; }
+      .name .tagline .story-container .first {
+        margin-top: -20px;
+        font-size: 40px;
+        color: #d1e550; }
+    .name .tagline .period-container {
+      display: block;
+      float: left;
+      width: 65%; }
+      .name .tagline .period-container .period {
+        margin-top: -20px;
+        font-size: 62px;
+        color: #d44532; }
 
 /*# sourceMappingURL=main.css.map */

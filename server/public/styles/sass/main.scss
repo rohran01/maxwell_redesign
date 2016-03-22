@@ -5,6 +5,7 @@
 @import 'imports/mixins';
 @import 'imports/responsive';
 
+@import url(https://fonts.googleapis.com/css?family=Unkempt|Text+Me+One|Roboto);
 @import 'imports/grid';
 @import 'imports/type';
 
@@ -17,28 +18,79 @@ nav {
   background-color: $yellowBackground;
   border: 1px $yellowDark solid;
   ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     list-style-type: none;
   }
   li {
     display: block;
     float: left;
+    padding: 16px 0;
     width: 20%;
     color: $yellowDark;
     font-size: 24px;
     font-weight: lighter;
+    -webkit-transition: all 200ms;
+   -moz-transition: all 200ms ;
+     -o-transition: all 200ms ;
+        transition: all 200ms;
+    &:hover {
+      background-color: $yellowDark;
+      color: $white;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $yellowBackground;
+      color: $yellowDark;
+    }
   }
 }
 
-.name, .programs, .credentials {
+.name, .skills, .projects {
   background-color: $black;
   color: $white;
 }
 .profile, .experience, .clients {
-  background-color: $white;
+  background: $white url('../images/bright-squares.png') repeat;
   color: $black;
 }
 
 .name {
   height: 500px;
   padding-top: 200px;
+  .tagline {
+    width: 45%;
+    height: 200px;
+    margin: 20px auto;
+    font-family: 'Unkempt', serif;
+    p, .first, .period {
+      margin: 0;
+      text-align: right;
+    }
+    .story-container {
+      display: block;
+      float: left;
+      width: 31%;
+      padding-right: 1%;
+      .first {
+        margin-top: -20px;
+        font-size: 40px;
+        color: $yellow;
+      }
+    }
+    .period-container {
+      display: block;
+      float: left;
+      width: 65%;
+      .period {
+        margin-top: -20px;
+        font-size: 62px;
+        color: $red;
+      }
+    }
+  }
+}
+
+.profile {
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en" ng-app="webApp">
 <head>
   <title>Maxwell Freudenthal</title>
   <link rel="stylesheet" href="assets/styles/main.css" />
@@ -8,14 +7,14 @@
   <script src="assets/scripts/client.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="mainController">
   <nav>
     <ul>
-      <li>Profile</li>
-      <li>Programs</li>
-      <li>Experience</li>
-      <li>Credentials</li>
-      <li>Clients</li>
+      <li ng-click="scrollTo('profile')">Profile</li>
+      <li ng-click="scrollTo('skills')">Skills</li>
+      <li ng-click="scrollTo('experience')">Experience</li>
+      <li ng-click="scrollTo('projects')">Projects</li>
+      <li ng-click="scrollTo('clients')">Clients</li>
     </ul>
 
   </nav>
@@ -25,38 +24,47 @@
       <h1>Maxwell Freudenthal</h1>
       <hr />
       <h3>Multimedia Designer</h3>
+      <div class="tagline">
+        <div class="story-container">
+          <p>STORY COMES</p>
+          <p class="first">FIRST.</p>
+        </div>
+        <div class="period-container">
+          <p class="period">PERIOD.</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="panel profile">
+  <div id="profile" class="panel profile">
     <div class="container">
       <h2>Profile</h2>
 
     </div>
   </div>
 
-  <div class="panel programs">
+  <div id="skills" class="panel skills">
     <div class="container">
-      <h2>Programs</h2>
+      <h2>Skills</h2>
 
     </div>
   </div>
 
-  <div class="panel experience">
+  <div id="experience" class="panel experience">
     <div class="container">
       <h2>Experience</h2>
 
     </div>
   </div>
 
-  <div class="panel credentials">
+  <div id="projects" class="panel projects">
     <div class="container">
-      <h2>Credentials</h2>
+      <h2>Projects</h2>
 
     </div>
   </div>
 
-  <div class="panel clients">
+  <div id="clients" class="panel clients">
     <div class="container">
       <h2>Clients</h2>
 
