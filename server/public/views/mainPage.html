@@ -10,20 +10,24 @@
 <body ng-controller="mainController">
   <nav>
     <ul>
-      <li ng-click="scrollTo('profile')">Profile</li>
-      <li ng-click="scrollTo('skills')">Skills</li>
-      <li ng-click="scrollTo('experience')">Experience</li>
-      <li ng-click="scrollTo('projects')">Projects</li>
-      <li ng-click="scrollTo('clients')">Clients</li>
+      <li ng-click="goTo('name')">Maxwell</li>
+      <li ng-click="goTo('profile')">Profile</li>
+      <li ng-click="goTo('skills')">Skills</li>
+      <li ng-click="goTo('experience')">Experience</li>
+      <li ng-click="goTo('projects')">Projects</li>
+      <li ng-click="goTo('clients')">Clients</li>
     </ul>
 
   </nav>
 
-  <div class="panel name">
+  <div id="name" class="panel name">
     <div class="container">
       <h1>Maxwell Freudenthal</h1>
       <hr />
       <h3>Multimedia Designer</h3>
+      <div class="icons">
+        <h4>[Here will be icons that link your sites...like twitter or something]</h4>
+      </div>
       <div class="tagline">
         <div class="story-container">
           <p>STORY COMES</p>
