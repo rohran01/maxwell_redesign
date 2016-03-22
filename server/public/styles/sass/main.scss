@@ -8,6 +8,37 @@
 @import 'imports/grid';
 @import 'imports/type';
 
-.test {
-  font-size: 12px;
+nav {
+  width: 96%;
+  height: 70px;
+  margin: 1.5%;
+  display: block;
+  position: fixed;
+  background-color: $yellowBackground;
+  border: 1px $yellowDark solid;
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: block;
+    float: left;
+    width: 20%;
+    color: $yellowDark;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+}
+
+.name, .programs, .credentials {
+  background-color: $black;
+  color: $white;
+}
+.profile, .experience, .clients {
+  background-color: $white;
+  color: $black;
+}
+
+.name {
+  height: 500px;
+  padding-top: 200px;
 }
