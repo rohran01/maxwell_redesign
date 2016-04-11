@@ -553,7 +553,7 @@ h5 {
   margin: 0 0 5px; }
 
 nav {
-  font-family: "Text Me One", sans-serif; }
+  font-family: "Coming Soon", sans-serif; }
 
 body {
   background: linear-gradient(#243333, #e8e8e8); }
@@ -639,5 +639,10 @@ nav {
     width: calc(100% / 5);
     display: block;
     float: left; }
+.work .work-content {
+  display: none; }
+.work .showing {
+  display: block;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

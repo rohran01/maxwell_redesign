@@ -1,11 +1,47 @@
-var app = angular.module('webApp', []);
+var app = angular.module('webApp', ['ngRoute'])
 
-app.controller('mainController', ['$scope', '$location', 'anchorSmoothScroll', function($scope, $location, anchorSmoothScroll) {
+//CONFIGURATION//
+
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: 'views/workPartials/film.html',
+      controller: 'WorkController'
+    })
+    .when('/commercial', {
+      templateUrl: 'views/workPartials/commercial.html',
+      controller: 'WorkController'
+    })
+    .when('/paintings', {
+      templateUrl: 'views/workPartials/paintings.html',
+      controller: 'WorkController'
+    })
+    .when('/white-board', {
+      templateUrl: 'views/workPartials/white-board.html',
+      controller: 'WorkController'
+    })
+    .when('/undone', {
+      templateUrl: 'views/workPartials/undone.html',
+      controller: 'WorkController'
+    });
+
+  $locationProvider.html5Mode(true);
+}])
+
+//CONTROLLERS//
+
+app.controller('MainController', ['$scope', '$location', 'anchorSmoothScroll', function($scope, $location, anchorSmoothScroll) {
   $scope.goTo = function(locationId) {
-    $location.hash(locationId);
+    // $location.hash(locationId);
     anchorSmoothScroll.scrollTo(locationId);
   }
 }])
+
+app.controller('WorkController', ['$scope', function($scope) {
+  $scope.test = 'working';
+}])
+
+//SERVICES//
 
 app.service('anchorSmoothScroll', function(){
 
@@ -56,7 +92,5 @@ app.service('anchorSmoothScroll', function(){
                 y += node.offsetTop;
             } return y;
         }
-
     };
-
 });

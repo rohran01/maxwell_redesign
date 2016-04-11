@@ -117,4 +117,11 @@ nav {
       float: left;
     }
   }
+  .work-content {
+    display: none;
+  }
+  .showing {
+    display: block;
+    width: 100%;
+  }
 }
