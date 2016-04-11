@@ -50,15 +50,6 @@ nav {
   }
 }
 
-// .name, .skills, .projects {
-//   // background-color: $black;
-//   color: $white;
-// }
-// .profile, .experience, .clients {
-//   // background: $white url('../images/bright-squares.png') repeat;
-//   color: $black;
-// }
-
 .title {
   width: 100%;
   background-color: $redBackground;
@@ -108,5 +99,22 @@ nav {
   }
   p {
     font-size: 24px;
+  }
+}
+
+.work {
+  nav {
+    margin: 20px 0;
+    position: static;
+    width: 100%;
+    ul {
+      height: 70px;
+      display: block;
+    }
+    li {
+      width: calc(100% / 5);
+      display: block;
+      float: left;
+    }
   }
 }

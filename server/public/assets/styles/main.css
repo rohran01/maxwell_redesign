@@ -628,4 +628,16 @@ nav {
 .profile p {
   font-size: 24px; }
 
+.work nav {
+  margin: 20px 0;
+  position: static;
+  width: 100%; }
+  .work nav ul {
+    height: 70px;
+    display: block; }
+  .work nav li {
+    width: calc(100% / 5);
+    display: block;
+    float: left; }
+
 /*# sourceMappingURL=main.css.map */
