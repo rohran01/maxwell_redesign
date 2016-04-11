@@ -5,13 +5,17 @@
 @import 'imports/mixins';
 @import 'imports/responsive';
 
+@import url(https://fonts.googleapis.com/css?family=Life+Savers);
 @import url(https://fonts.googleapis.com/css?family=Unkempt|Text+Me+One|Roboto);
 @import 'imports/grid';
 @import 'imports/type';
 
+body {
+  background: linear-gradient($black, $white);
+}
+
 nav {
-  width: 96%;
-  height: 70px;
+  width: 10%;
   margin: 1.5%;
   display: block;
   position: fixed;
@@ -25,19 +29,18 @@ nav {
   }
   li {
     display: block;
-    float: left;
     padding: 16px 0;
-    width: 16.66%;
-    color: $yellowDark;
+    width: 100%;
+    color: $black;
     font-size: 24px;
     font-weight: lighter;
-    -webkit-transition: all 200ms;
-   -moz-transition: all 200ms ;
-     -o-transition: all 200ms ;
-        transition: all 200ms;
+    -webkit-transition: all 400ms;
+      -moz-transition: all 400ms ;
+        -o-transition: all 400ms ;
+            transition: all 400ms;
     &:hover {
       background-color: $yellowDark;
-      color: $white;
+      // color: $white;
       cursor: pointer;
     }
     &:active {
@@ -47,13 +50,19 @@ nav {
   }
 }
 
-.name, .skills, .projects {
-  background-color: $black;
+// .name, .skills, .projects {
+//   // background-color: $black;
+//   color: $white;
+// }
+// .profile, .experience, .clients {
+//   // background: $white url('../images/bright-squares.png') repeat;
+//   color: $black;
+// }
+
+.title {
+  width: 100%;
+  background-color: $redBackground;
   color: $white;
-}
-.profile, .experience, .clients {
-  background: $white url('../images/bright-squares.png') repeat;
-  color: $black;
 }
 
 .name {
@@ -93,4 +102,11 @@ nav {
 }
 
 .profile {
+  .splash {
+    width: 100%;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 24px;
+  }
 }

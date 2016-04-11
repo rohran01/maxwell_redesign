@@ -3,9 +3,11 @@
 //**
 
 // @import "config";
+@import url(https://fonts.googleapis.com/css?family=Life+Savers);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Life Savers", cursive;
   font-size: 16px;
   text-align: center;
   font-style: normal;
@@ -29,11 +31,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Life Savers", "Raleway", cursive;
+  color: $white;
 }
 
 h1 {
-  font-family: "Unkempt", serif;
   font-size: 86px;
   font-style: normal;
   font-weight: 400;
@@ -41,7 +43,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Unkempt", serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -49,11 +50,12 @@ h2 {
 }
 
 h3 {
-  font-family: "Text Me One", sans-serif;
+  font-family: "Coming Soon", sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 5px;
+  color: $red;
 }
 
 h4 {
