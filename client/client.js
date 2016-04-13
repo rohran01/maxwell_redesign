@@ -1,32 +1,40 @@
 var app = angular.module('webApp', ['ngRoute'])
 
-//CONFIGURATION//
+//SETS OF IMAGES//
 
-app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $routeProvider
-    .when('/', {
-      templateUrl: 'views/workPartials/film.html',
-      controller: 'WorkController'
-    })
-    .when('/commercial', {
-      templateUrl: 'views/workPartials/commercial.html',
-      controller: 'WorkController'
-    })
-    .when('/paintings', {
-      templateUrl: 'views/workPartials/paintings.html',
-      controller: 'WorkController'
-    })
-    .when('/white-board', {
-      templateUrl: 'views/workPartials/white-board.html',
-      controller: 'WorkController'
-    })
-    .when('/undone', {
-      templateUrl: 'views/workPartials/undone.html',
-      controller: 'WorkController'
-    });
+var films = [
+  {title: 'Octopus', image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'}
+]
 
-  $locationProvider.html5Mode(true);
-}])
+var paintings = [
+  {title: 'Octopus', image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'},
+  {image: 'assets/images/octopus1.jpeg',
+    description: 'this is a freaking octopus, man'}
+]
 
 //CONTROLLERS//
 
@@ -38,7 +46,20 @@ app.controller('MainController', ['$scope', '$location', 'anchorSmoothScroll', f
 }])
 
 app.controller('WorkController', ['$scope', function($scope) {
-  $scope.test = 'working';
+
+  $scope.itemsToDisplay = [];
+
+  function showItems(category) {
+
+    console.log(category);
+
+    $scope.itemsToDisplay = [];
+
+    $scope.itemsToDisplay = category;
+
+  }
+
+  showItems(films);
 }])
 
 //SERVICES//

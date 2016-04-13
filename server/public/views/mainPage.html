@@ -67,16 +67,20 @@
       <h2 class="title">Body of Work</h2>
       <nav class="work-nav">
         <ul>
-          <a href="/"><li>Film</li></a>
-          <a href="/commercial"><li>Commercial</li></a>
-          <a href="/paintings"><li>Paintings</li></a>
-          <a href="/white-board"><li>White Board</li></a>
-          <a href="/undone"><li>Undone</li></a>
+          <li ng-click="showItems(films)">Film</li>
+          <li ng-click="showItems(commercial)">Commercial</li>
+          <li ng-click="showItems(paintings)">Paintings</li>
+          <li ng-click="showItems(whiteBoard)">White Board</li>
+          <li ng-click="showItems(Undone)">Undone</li>
         </ul>
       </nav>
 
-      <div ng-view>
-
+      <div class="work-holder" ng-repeat="item in itemsToDisplay">
+        <img src="{{item.image}}"/>
+        <div class="work-slideover">
+          <h4 class="work-title">{{item.title}}</h4>
+          <p>{{item.description}}</p>
+        </div>
       </div>
 
     </div>
