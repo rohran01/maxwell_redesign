@@ -158,9 +158,22 @@ nav {
             transition: all 500ms ease;
       z-index: 100;
       p {
+        position: relative;
+        left: -300px;
         margin: 10px auto;
         width: 90%;
-        display: block;
+        -webkit-transition: left 500ms ease 200ms;
+          -moz-transition: left 500ms ease 200ms;
+            -o-transition: left 500ms ease 200ms;
+              transition: left 500ms ease 200ms;
+      }
+      h4 {
+        position: relative;
+        right: -300px;
+        -webkit-transition: right 700ms ease 200ms;
+          -moz-transition: right 700ms ease 200ms;
+            -o-transition: right 700ms ease 200ms;
+              transition: right 700ms ease 200ms;
       }
     }
     &:hover > .work-slideover {
@@ -168,7 +181,13 @@ nav {
       background-color: $black;
       color: $white;
     }
-    img, p {
+    &:hover > .work-slideover p{
+      left: 0;
+    }
+    &:hover > .work-slideover h4 {
+      right: 0;
+    }
+    img {
       margin: 10px auto;
       width: 90%;
       display: block;
@@ -177,13 +196,17 @@ nav {
   }
 }
 
-.one-skill:hover > div {
-  letter-spacing: 2px;
-  color: $white;
-  i {
-    margin-right: 4px
+.one-skill {
+  letter-spacing: 1px;
+  &:hover > div {
+    letter-spacing: 3px;
+    color: $white;
+    i {
+      margin-right: 4px
+    }
   }
 }
+
 
 .skill-name, .skill-rating {
   display: block;
@@ -203,7 +226,7 @@ nav {
     transition: all 200ms ease;
   }
   .negative {
-    opacity: 0.4;
+    opacity: 0.5;
   }
 
 }

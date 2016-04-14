@@ -55,7 +55,6 @@ app.controller('WorkController', ['$scope', function($scope) {
   $scope.showItems = function(category) {
 
     $scope.itemsToDisplay = [];
-
     switch(category) {
       case 'films':
         $scope.itemsToDisplay = films;
@@ -72,10 +71,12 @@ app.controller('WorkController', ['$scope', function($scope) {
       case 'undone':
         $scope.itemsToDisplay = undone;
         break;
+      default:
+        $scope.itemsToDisplay = films;
     };
   };
 
-  $scope.showItems(films);
+  $scope.showItems();
 }])
 
 //SERVICES//
