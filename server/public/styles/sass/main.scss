@@ -162,18 +162,18 @@ nav {
         left: -300px;
         margin: 10px auto;
         width: 90%;
-        -webkit-transition: left 500ms ease 200ms;
-          -moz-transition: left 500ms ease 200ms;
-            -o-transition: left 500ms ease 200ms;
-              transition: left 500ms ease 200ms;
+        -webkit-transition: left 700ms ease 100ms;
+          -moz-transition: left 700ms ease 100ms;
+            -o-transition: left 700ms ease 100ms;
+              transition: left 700ms ease 100ms;
       }
       h4 {
         position: relative;
         right: -300px;
-        -webkit-transition: right 700ms ease 200ms;
-          -moz-transition: right 700ms ease 200ms;
-            -o-transition: right 700ms ease 200ms;
-              transition: right 700ms ease 200ms;
+        -webkit-transition: right 500ms ease 100ms;
+          -moz-transition: right 500ms ease 100ms;
+            -o-transition: right 500ms ease 100ms;
+              transition: right 500ms ease 100ms;
       }
     }
     &:hover > .work-slideover {
@@ -197,12 +197,20 @@ nav {
 }
 
 .one-skill {
-  letter-spacing: 1px;
-  &:hover > div {
-    letter-spacing: 3px;
+  p {
+    letter-spacing: 1px;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+  }
+  &:hover > div{
     color: $white;
     i {
       margin-right: 4px
+    }
+    p {
+      letter-spacing: 4px;
     }
   }
 }
@@ -223,12 +231,14 @@ nav {
   i {
     position: relative;
     top: 14px;
-    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
   }
   .negative {
-    opacity: 0.5;
+    opacity: 0.4;
   }
-
 }
 
 .experience-category {
@@ -256,5 +266,34 @@ nav {
     font-size: 24px;
     font-weight: bold;
     font-variant: small-caps;
+  }
+}
+
+.contact h3 {
+  color: $black;
+  font-weight: bolder;
+}
+
+.contact-icons {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  i {
+    margin: 0 20px;
+    position: relative;
+    top: 0;
+    color: $black;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+    &:hover {
+      // color: $white;
+      top: -10px;
+    }
+    &:active {
+      top: -15px;
+    }
   }
 }
