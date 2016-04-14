@@ -1,4 +1,4 @@
-var app = angular.module('webApp', ['ngRoute'])
+var app = angular.module('webApp', [])
 
 //SETS OF IMAGES//
 
@@ -36,6 +36,8 @@ var paintings = [
     description: 'this is a freaking octopus, man'}
 ]
 
+var commercial = [];
+
 //CONTROLLERS//
 
 app.controller('MainController', ['$scope', '$location', 'anchorSmoothScroll', function($scope, $location, anchorSmoothScroll) {
@@ -43,23 +45,37 @@ app.controller('MainController', ['$scope', '$location', 'anchorSmoothScroll', f
     // $location.hash(locationId);
     anchorSmoothScroll.scrollTo(locationId);
   }
+
 }])
 
 app.controller('WorkController', ['$scope', function($scope) {
 
   $scope.itemsToDisplay = [];
 
-  function showItems(category) {
-
-    console.log(category);
+  $scope.showItems = function(category) {
 
     $scope.itemsToDisplay = [];
 
-    $scope.itemsToDisplay = category;
+    switch(category) {
+      case 'films':
+        $scope.itemsToDisplay = films;
+        break;
+      case 'commercial':
+        $scope.itemsToDisplay = commercial;
+        break;
+      case 'paintings':
+        $scope.itemsToDisplay = paintings;
+        break;
+      case 'whiteBoard':
+        $scope.itemsToDisplay = whiteBoard;
+        break;
+      case 'undone':
+        $scope.itemsToDisplay = undone;
+        break;
+    };
+  };
 
-  }
-
-  showItems(films);
+  $scope.showItems(films);
 }])
 
 //SERVICES//
@@ -72,7 +88,7 @@ app.service('anchorSmoothScroll', function(){
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
 
         var startY = currentYPosition();
-        var stopY = elmYPosition(locationId) - 20;
+        var stopY = elmYPosition(locationId) - 21;
         var distance = stopY > startY ? stopY - startY : startY - stopY;
         if (distance < 100) {
             scrollTo(0, stopY); return;

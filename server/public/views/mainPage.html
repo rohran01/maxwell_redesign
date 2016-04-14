@@ -67,16 +67,16 @@
       <h2 class="title">Body of Work</h2>
       <nav class="work-nav">
         <ul>
-          <li ng-click="showItems(films)">Film</li>
-          <li ng-click="showItems(commercial)">Commercial</li>
-          <li ng-click="showItems(paintings)">Paintings</li>
-          <li ng-click="showItems(whiteBoard)">White Board</li>
-          <li ng-click="showItems(Undone)">Undone</li>
+          <li ng-click="showItems('films')">Film</li>
+          <li ng-click="showItems('commercial')">Commercial</li>
+          <li ng-click="showItems('paintings')">Paintings</li>
+          <li ng-click="showItems('whiteBoard')">White Board</li>
+          <li ng-click="showItems('undone')">Undone</li>
         </ul>
       </nav>
 
       <div class="work-holder" ng-repeat="item in itemsToDisplay">
-        <img src="{{item.image}}"/>
+        <img ng-src="{{item.image}}"/>
         <div class="work-slideover">
           <h4 class="work-title">{{item.title}}</h4>
           <p>{{item.description}}</p>
@@ -96,6 +96,70 @@
   <div id="experience" class="panel experience">
     <div class="container">
       <h2 class="title">Experience</h2>
+
+      <h3 class="experience-category">Career</h3>
+      <hr class="full-width" />
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">FOX9 KMSP/WFTC</h4>
+          <p class="time-spent">2014-2016</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Creative Services Producer</h4>
+          <p class="job-description">Worked both on my own and with other in the department to concept on-air promotions and execute those concepts. This included shooting, lighting, editing, animating, and coordinating with talent. As a designer, I created logos, print/web graphics, and signage for various station events. I was a key designer for The Jason Show, creating the logo, all in-show animations, and on-air promotions. I was also an integral part of FOX9's re-branding efforts, where I developed a new logo and visual lookt hat was clean, classy, and contemporary. I also created a marketing strategy to define our "So much more" tagline through on-air promotions.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">3M Dynamic Merchandising</h4>
+          <p class="time-spent">2012-2014</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Content Producer</h4>
+          <p class="job-description">Graphic design, video editing, special effects, file formatting, and support of research and development projects. Created or manipulated existing content for a range of clients, including; Anheuser Busch, Coca-Cola, Best Buy Mobile, Walmart, Circle K, Mercedes Benz, Honda, Verizon, Deutsche Telekom, Wells Fargo, and other 3M divisions. As the only graphic artist in the division, I frequently supported the business and marketing teams as well. I developed and maintained a visual identity for our Dynamic Merchandising team, which carried through in sales presentations, video and animation, and printed graphics, as well as a written mission statement of our brand.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Undone: A New Musical</h4>
+          <p class="time-spent">2010-2012</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Writer, Director, Producer</h4>
+          <p class="job-description"><a href="http://www.undonethemusical.com/WINNER_OUT_Twin_Cities_Film_Fest.html" target="_blank">Undone</a> is an award-winning, feature-length musical that I completed while I was a student at MCAD. As the creator, I oversaw the entire production from planning to post, and maintained the business entity, Undone: A New Musical, LLC. The film took over 2 years to complete and employed over 100 local professionals, including crew, actors, and musicians.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <h3 class="experience-category">Education</h3>
+      <hr class="full-width" />
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Minneapolis College of Art and Design</h4>
+          <p class="time-spent">2008-2012</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">BFA in Film-Making</h4>
+          <p class="job-description"></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Rocky Mountain College of Art and Design</h4>
+          <p class="time-spent">2008</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Character Development Training</h4>
+          <p class="job-description"></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
 
     </div>
   </div>
