@@ -176,6 +176,38 @@ nav {
     }
   }
 }
+
+.one-skill:hover > div {
+  letter-spacing: 2px;
+  color: $white;
+  i {
+    margin-right: 4px
+  }
+}
+
+.skill-name, .skill-rating {
+  display: block;
+  float: left;
+  width: calc(50% - 20px);
+}
+.skill-name {
+  text-align: right;
+  padding-right: 10px
+}
+.skill-rating {
+  text-align: left;
+  padding-left: 10px;
+  i {
+    position: relative;
+    top: 14px;
+    transition: all 200ms ease;
+  }
+  .negative {
+    opacity: 0.4;
+  }
+
+}
+
 .experience-category {
   text-align: left;
   font-weight: bold;
@@ -194,7 +226,7 @@ nav {
   width: 100%;
   text-align: left;
   .experience-left {
-    margin-right: calc(4.2544% - 4px);
+    margin-right: 4.2544%;
   }
   .employer, .job-title {
     color: $black;

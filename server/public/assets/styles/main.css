@@ -692,6 +692,31 @@ nav {
     display: block;
     z-index: -100; }
 
+.one-skill:hover > div {
+  letter-spacing: 2px;
+  color: #e8e8e8; }
+  .one-skill:hover > div i {
+    margin-right: 4px; }
+
+.skill-name, .skill-rating {
+  display: block;
+  float: left;
+  width: calc(50% - 20px); }
+
+.skill-name {
+  text-align: right;
+  padding-right: 10px; }
+
+.skill-rating {
+  text-align: left;
+  padding-left: 10px; }
+  .skill-rating i {
+    position: relative;
+    top: 14px;
+    transition: all 200ms ease; }
+  .skill-rating .negative {
+    opacity: 0.4; }
+
 .experience-category {
   text-align: left;
   font-weight: bold;
@@ -710,7 +735,7 @@ nav {
   width: 100%;
   text-align: left; }
   .experience-container .experience-left {
-    margin-right: calc(4.2544% - 4px); }
+    margin-right: 4.2544%; }
   .experience-container .employer, .experience-container .job-title {
     color: #243333;
     font-size: 24px;
