@@ -30,20 +30,12 @@
       <h1>Maxwell Freudenthal</h1>
       <hr />
       <h3>Multimedia Designer</h3>
-      <!-- <div class="icons">
-        <h4>[Here will be icons that link your sites...like twitter or something]</h4>
-      </div> -->
+
       <div class="tagline">
         <h4>Story comes first. Period.</h4>
-        <!-- <div class="story-container">
-          <p>STORY COMES</p>
-          <p class="first">FIRST.</p>
-        </div>
-        <div class="period-container">
-          <p class="period">PERIOD.</p> -->
-        </div>
       </div>
     </div>
+
   </div>
 
   <div id="profile" class="panel profile">
@@ -69,21 +61,20 @@
       <h2 class="title">Body of Work</h2>
       <nav class="work-nav">
         <ul>
-          <li ng-click="showItems('films')">Film</li>
-          <li ng-click="showItems('commercial')">Commercial</li>
-          <li ng-click="showItems('paintings')">Paintings</li>
-          <li ng-click="showItems('whiteBoard')">White Board</li>
-          <li ng-click="showItems('undone')">Undone</li>
+          <a href='/'><li>Film</li></a>
+          <a href='/commercial'><li >Commercial</li></a>
+          <a href='/paintings'><li >Paintings</li></a>
+          <a href='/white-board'><li >White Board</li></a>
+          <a href='/undone'><li>Undone</li></a>
         </ul>
       </nav>
 
-      <div class="work-holder" ng-repeat="item in itemsToDisplay">
-        <img ng-src="{{item.image}}"/>
-        <div class="work-slideover">
-          <h4 class="work-title">{{item.title}}</h4>
-          <p>{{item.description}}</p>
+      <div class="work-view">
+        <div ng-view>
+
         </div>
       </div>
+
 
     </div>
   </div>

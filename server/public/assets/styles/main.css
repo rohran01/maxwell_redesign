@@ -360,6 +360,9 @@ td,
 th {
   padding: 0; }
 
+body {
+  background: linear-gradient(#243333, #e8e8e8); }
+
 .panel {
   width: 100%;
   margin-left: 13%; }
@@ -555,9 +558,6 @@ h5 {
 nav {
   font-family: "Coming Soon", sans-serif; }
 
-body {
-  background: linear-gradient(#243333, #e8e8e8); }
-
 nav {
   width: 10%;
   margin: 1.5%;
@@ -639,30 +639,42 @@ nav {
     width: calc(100% / 5);
     display: block;
     float: left; }
-.work .work-view {
-  width: 100%; }
-.work:nth-child(4):before, .work:nth-child(4):after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden; }
-.work:nth-child(4):after {
-  clear: both; }
-.work .showing {
-  display: block;
-  width: 100%; }
-.work .work-holder {
-  width: calc(23% - 2px);
-  height: 320px;
+
+*, *:before, *:after {
+  box-sizing: border-box !important; }
+
+.work-view {
+  -moz-column-width: 20em;
+  -webkit-column-width: 20em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em; }
+
+.work-holder {
   overflow-y: hidden;
-  margin: 10px 1%;
-  display: block;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #e8e8e8;
+  border: 1px solid #243333;
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 1rem;
+  width: 100%; }
+
+.video-title {
+  color: #243333; }
+
+iframe {
+  width: 100%;
+  height: auto; }
+
+.painting-holder {
+  overflow: hidden;
+  padding: 10px;
   position: relative;
-  float: left;
   cursor: pointer;
   background-color: #e8e8e8;
   border: 1px solid #243333; }
-  .work .work-holder .work-slideover {
+  .painting-holder .painting-slideover {
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -676,9 +688,8 @@ nav {
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-    z-index: 100; }
-    .work .work-holder .work-slideover p {
+    transition: all 500ms ease; }
+    .painting-holder .painting-slideover p {
       position: relative;
       left: -300px;
       margin: 10px auto;
@@ -687,24 +698,23 @@ nav {
       -moz-transition: left 700ms ease 100ms;
       -o-transition: left 700ms ease 100ms;
       transition: left 700ms ease 100ms; }
-    .work .work-holder .work-slideover h4 {
+    .painting-holder .painting-slideover h4 {
       position: relative;
       right: -300px;
       -webkit-transition: right 500ms ease 100ms;
       -moz-transition: right 500ms ease 100ms;
       -o-transition: right 500ms ease 100ms;
       transition: right 500ms ease 100ms; }
-  .work .work-holder:hover > .work-slideover {
+  .painting-holder:hover > .painting-slideover {
     top: 0;
     background-color: #243333;
     color: #e8e8e8; }
-  .work .work-holder:hover > .work-slideover p {
+  .painting-holder:hover > .painting-slideover p {
     left: 0; }
-  .work .work-holder:hover > .work-slideover h4 {
+  .painting-holder:hover > .painting-slideover h4 {
     right: 0; }
-  .work .work-holder img {
-    margin: 10px auto;
-    width: 90%;
+  .painting-holder img {
+    width: 100%;
     display: block;
     z-index: -100; }
 

@@ -16,6 +16,10 @@ $yellowBackground: rgba($yellow, 0.4);
 $yellowDark: darken($yellow, 20%);
 $black: rgba(36, 51, 51, 80);
 
+body {
+  background: linear-gradient($black, $white);
+}
+
 .panel {
     // height: 700px;
     width: 100%;

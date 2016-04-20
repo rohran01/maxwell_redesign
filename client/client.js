@@ -1,40 +1,38 @@
-var app = angular.module('webApp', [])
+var app = angular.module('webApp', ['ngRoute'])
+
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+   $routeProvider
+    .when('/', {
+      templateUrl: 'views/workPartials/film.html',
+      controller: 'WorkController'
+     })
+    .when('/commercial', {
+      templateUrl: 'views/workPartials/commercial.html',
+      controller: 'WorkController'
+     })
+    .when('/paintings', {
+      templateUrl: 'views/workPartials/paintings.html',
+      controller: 'WorkController'
+     })
+     .when('/white-board', {
+      templateUrl: 'views/workPartials/white-board.html',
+      controller: 'WorkController'
+     })
+     .when('/undone', {
+      templateUrl: 'views/workPartials/undone.html',
+      controller: 'WorkController'
+     });
+
+   $locationProvider.html5Mode(true);
+}])
 
 //SETS OF IMAGES//
 
-var films = [
-  {title: 'Octopus', image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'}
-]
 
-var paintings = [
-  {title: 'Octopus', image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'},
-  {image: 'assets/images/octopus1.jpeg',
-    description: 'this is a freaking octopus, man'}
-]
+
+var whiteBoard = [];
+
+
 
 var commercial = [];
 
@@ -48,35 +46,76 @@ app.controller('MainController', ['$scope', '$location', 'anchorSmoothScroll', f
 
 }])
 
-app.controller('WorkController', ['$scope', function($scope) {
+app.controller('WorkController', ['$scope', '$sce', function($scope, $sce) {
 
-  $scope.itemsToDisplay = [];
+  $scope.films = [
+    {title: 'My Burrito', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/93672257'), description: 'Support The Southern Theater and feed your face at the same time!'},
+    {title: 'The Interview', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/92856230'), description: ''},
+    {title: 'Undone: A New Musical - Trailer', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/21698859'), description: ''},
+    {title: 'Genetech', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/93288070'), description: ''},
+    {title: 'Laddie Documentary Trailer', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/15367947'), description: 'This is a pre-production trailer I edited for Amanda Ladd-Jones. In order to pitch her father\'s story she needed a video to show future producers. It\'s always fun to have access to such great work.'},
+    {title: 'Lagina', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/15375316'), description: 'I made for the 24-hour Minneapolis Film Race. I was the writer and editor. We received Best Set Design and Best Sound Design.'},
+    {title: 'The Voice', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/25569801'), description: 'A short video I made for Short Cuts at IFP Minnesota'},
+    {title: '5 Hour Energy Commercial', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/15373779'), description: 'PA and Boom Operator on this project. I was also involved with the concept and production of the ad. We were one of the top 5 finalists.'},
+    {title: 'Untitled', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/16113718'), description: ''},
+  ]
 
-  $scope.showItems = function(category) {
+  $scope.paintings = [
+    {title: 'Octopus', image: 'assets/images/paintings/octopus.jpeg',
+      description: 'This is a freaking octopus, man'},
+    {title: 'Elephant', image: 'assets/images/paintings/elephant.jpeg',
+      description: 'This is a freaking elephant, man'},
+    {title: 'Great White', image: 'assets/images/paintings/greatwhite.jpeg',
+      description: 'This is a freaking shark, man'},
+    {title: 'Jelly Fish', image: 'assets/images/paintings/jellyfish.jpeg',
+      description: 'This is a freaking jelly fish, man'},
+    {title: 'Lion', image: 'assets/images/paintings/lionBust.jpg',
+      description: 'This is a freaking lion, man'},
+    {title: 'Three Ostriches', image: 'assets/images/paintings/ostriches.jpeg',
+      description: 'This is a freaking group of ostriches, man'},
+    {title: 'Plumed Bird', image: 'assets/images/paintings/plumedBird.jpeg',
+      description: 'This is a freaking bird head, man'},
+    {title: 'Sea Dragon', image: 'assets/images/paintings/seadragon.jpeg',
+      description: 'This is a freaking sea dragon, man'},
+    {title: 'Stag', image: 'assets/images/paintings/stag.jpg',
+      description: 'This is a freaking stag, man'},
+    {title: 'Humpback', image: 'assets/images/paintings/whaleTriptych.jpeg',
+      description: 'This is a freaking humpback whale, man'},
+    {title: 'AZebra', image: 'assets/images/paintings/zebra.jpeg',
+      description: 'This is a freaking zebra, man'}
+  ];
 
-    $scope.itemsToDisplay = [];
-    switch(category) {
-      case 'films':
-        $scope.itemsToDisplay = films;
-        break;
-      case 'commercial':
-        $scope.itemsToDisplay = commercial;
-        break;
-      case 'paintings':
-        $scope.itemsToDisplay = paintings;
-        break;
-      case 'whiteBoard':
-        $scope.itemsToDisplay = whiteBoard;
-        break;
-      case 'undone':
-        $scope.itemsToDisplay = undone;
-        break;
-      default:
-        $scope.itemsToDisplay = films;
-    };
-  };
+  // $scope.itemsToDisplay = [];
+  //
+  // $scope.showItems = function(category) {
+  //
+  //   console.log('showItems fired');
+  //
+  //   $scope.itemsToDisplay = [];
+  //   switch(category) {
+  //     case 'films':
+  //       $scope.itemsToDisplay = films;
+  //       break;
+  //     case 'commercial':
+  //       $scope.itemsToDisplay = commercial;
+  //       break;
+  //     case 'paintings':
+  //       $scope.itemsToDisplay = paintings;
+  //       break;
+  //     case 'whiteBoard':
+  //       $scope.itemsToDisplay = whiteBoard;
+  //       break;
+  //     case 'undone':
+  //       $scope.itemsToDisplay = undone;
+  //       break;
+  //     default:
+  //       $scope.itemsToDisplay = paintings;
+  //   };
+  //   console.log($scope.itemsToDisplay);
+  // };
 
-  $scope.showItems();
+  // $scope.showItems();
+
 }])
 
 //SERVICES//
