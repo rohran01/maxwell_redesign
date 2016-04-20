@@ -50,12 +50,13 @@ nav {
 
 .title {
   width: 100%;
+  margin-top: 20px;
   background-color: $redBackground;
   color: $white;
 }
 
 .name {
-  height: 500px;
+  height: 700px;
   padding-top: 200px;
   .tagline {
     width: 45%;
@@ -99,6 +100,7 @@ nav {
   }
   p {
     font-size: 24px;
+    color: $white;
   }
 }
 
@@ -228,6 +230,7 @@ iframe {
 
 .one-skill {
   p {
+    font-size: 24px;
     letter-spacing: 1px;
     -webkit-transition: all 200ms ease;
       -moz-transition: all 200ms ease;
@@ -237,10 +240,10 @@ iframe {
   &:hover > div{
     color: $white;
     i {
-      margin-right: 4px
+      margin-right: 8px
     }
     p {
-      letter-spacing: 4px;
+      letter-spacing: 8px;
     }
   }
 }
@@ -301,9 +304,15 @@ iframe {
 
 //CLIENTS SECTION//
 
-
+.clients {
+  height: 700px;
+}
 
 //CONTACT SECTION//
+.contact {
+  height: 700px;
+}
+
 .contact h3 {
   color: $black;
   font-weight: bolder;

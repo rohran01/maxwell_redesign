@@ -590,11 +590,12 @@ nav {
 
 .title {
   width: 100%;
+  margin-top: 20px;
   background-color: rgba(212, 69, 50, 0.6);
   color: #e8e8e8; }
 
 .name {
-  height: 500px;
+  height: 700px;
   padding-top: 200px; }
   .name .tagline {
     width: 45%;
@@ -626,7 +627,8 @@ nav {
   width: 100%;
   margin: 20px 0; }
 .profile p {
-  font-size: 24px; }
+  font-size: 24px;
+  color: #e8e8e8; }
 
 .work nav {
   margin: 20px 0;
@@ -732,6 +734,7 @@ iframe {
     color: #e8e8e8; }
 
 .one-skill p {
+  font-size: 24px;
   letter-spacing: 1px;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -740,9 +743,9 @@ iframe {
 .one-skill:hover > div {
   color: #e8e8e8; }
   .one-skill:hover > div i {
-    margin-right: 4px; }
+    margin-right: 8px; }
   .one-skill:hover > div p {
-    letter-spacing: 4px; }
+    letter-spacing: 8px; }
 
 .skill-name, .skill-rating {
   display: block;
@@ -790,6 +793,12 @@ iframe {
     font-size: 24px;
     font-weight: bold;
     font-variant: small-caps; }
+
+.clients {
+  height: 700px; }
+
+.contact {
+  height: 700px; }
 
 .contact h3 {
   color: #243333;
