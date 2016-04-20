@@ -667,14 +667,14 @@ iframe {
   width: 100%;
   height: auto; }
 
-.painting-holder {
+.image-holder {
   overflow: hidden;
   padding: 10px;
   position: relative;
   cursor: pointer;
   background-color: #e8e8e8;
   border: 1px solid #243333; }
-  .painting-holder .painting-slideover {
+  .image-holder .image-slideover {
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -689,7 +689,7 @@ iframe {
     -moz-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease; }
-    .painting-holder .painting-slideover p {
+    .image-holder .image-slideover p {
       position: relative;
       left: -300px;
       margin: 10px auto;
@@ -699,7 +699,7 @@ iframe {
       -moz-transition: left 700ms ease 100ms;
       -o-transition: left 700ms ease 100ms;
       transition: left 700ms ease 100ms; }
-    .painting-holder .painting-slideover h4 {
+    .image-holder .image-slideover h4 {
       position: relative;
       right: -300px;
       font-size: 36px;
@@ -707,16 +707,17 @@ iframe {
       -moz-transition: right 500ms ease 100ms;
       -o-transition: right 500ms ease 100ms;
       transition: right 500ms ease 100ms; }
-  .painting-holder:hover > .painting-slideover {
+  .image-holder:hover > .image-slideover {
     top: 0;
     background-color: #243333;
     color: #e8e8e8; }
-  .painting-holder:hover > .painting-slideover p {
+  .image-holder:hover > .image-slideover p {
     left: 0; }
-  .painting-holder:hover > .painting-slideover h4 {
+  .image-holder:hover > .image-slideover h4 {
     right: 0; }
-  .painting-holder img {
+  .image-holder img {
     width: 100%;
+    height: auto;
     display: block;
     z-index: -100; }
 

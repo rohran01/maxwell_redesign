@@ -6,16 +6,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       templateUrl: 'views/workPartials/film.html',
       controller: 'WorkController'
      })
-    .when('/commercial', {
-      templateUrl: 'views/workPartials/commercial.html',
+    .when('/fox9', {
+      templateUrl: 'views/workPartials/fox9.html',
       controller: 'WorkController'
      })
     .when('/paintings', {
       templateUrl: 'views/workPartials/paintings.html',
       controller: 'WorkController'
      })
-     .when('/white-board', {
-      templateUrl: 'views/workPartials/white-board.html',
+     .when('/commercial', {
+      templateUrl: 'views/workPartials/commercial.html',
       controller: 'WorkController'
      })
      .when('/undone', {
@@ -60,6 +60,25 @@ app.controller('WorkController', ['$scope', '$sce', function($scope, $sce) {
     {title: 'Untitled', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/16113718'), description: ''},
   ]
 
+  $scope.fox9 = [
+    {title: 'Big Bang Theory - Dance', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161862885'), description: ''},
+    {title: 'FOX9 Weather App', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863815'), description: ''},
+    {title: 'FOX9.com', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161862930'), description: ''},
+    {title: 'Ride Abuse', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161862993'), description: ''},
+    {title: 'Forgiveness', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863029'), description: ''},
+    {title: 'Tickets Tossed', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863079'), description: ''},
+    {title: 'The Missing', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863154'), description: ''},
+    {title: 'The Jason Show - Valentine\'s Day', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863715'), description: ''},
+    {title: 'The Jason Show - Segment Animations', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863262'), description: ''},
+    {title: 'Fish Out of Water', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863324'), description: ''},
+    {title: 'Drama Horn', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161863299'), description: ''},
+    {title: 'Shayne - Morning Traffic', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161864093'), description: ''},
+    {title: 'Cody and Leah - Food', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161864180'), description: ''},
+    {title: 'FOX9 Mornings End Page', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161864970'), description: ''},
+    {title: 'Evenings - Animated', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161864967'), description: ''},
+    {title: 'FOX9 Nightly End Page', url: $sce.trustAsResourceUrl('https://player.vimeo.com/video/161864972'), description: ''},
+  ];
+
   $scope.paintings = [
     {title: 'Octopus', image: 'assets/images/paintings/octopus.jpeg',
       description: 'This is a freaking octopus, man'},
@@ -85,36 +104,24 @@ app.controller('WorkController', ['$scope', '$sce', function($scope, $sce) {
       description: 'This is a freaking zebra, man'}
   ];
 
-  // $scope.itemsToDisplay = [];
-  //
-  // $scope.showItems = function(category) {
-  //
-  //   console.log('showItems fired');
-  //
-  //   $scope.itemsToDisplay = [];
-  //   switch(category) {
-  //     case 'films':
-  //       $scope.itemsToDisplay = films;
-  //       break;
-  //     case 'commercial':
-  //       $scope.itemsToDisplay = commercial;
-  //       break;
-  //     case 'paintings':
-  //       $scope.itemsToDisplay = paintings;
-  //       break;
-  //     case 'whiteBoard':
-  //       $scope.itemsToDisplay = whiteBoard;
-  //       break;
-  //     case 'undone':
-  //       $scope.itemsToDisplay = undone;
-  //       break;
-  //     default:
-  //       $scope.itemsToDisplay = paintings;
-  //   };
-  //   console.log($scope.itemsToDisplay);
-  // };
-
-  // $scope.showItems();
+  $scope.commercial = [
+    {title: 'VP Skin for Fairview', image: 'assets/images/commercial/fairview.png',
+      description: ''},
+    {title: '3M Advertisement', image: 'assets/images/commercial/threemBooth.jpg',
+      description: ''},
+    {title: '3M Graphic Solutions Advertisement', image: 'assets/images/commercial/threemGraphicSolutions.jpg',
+      description: ''},
+    {title: 'VP Skin for 3M Innovations', image: 'assets/images/commercial/threemInnovationSkin.png',
+      description: ''},
+    {title: '3M Interactive Advertisement', image: 'assets/images/commercial/threemInteractive.jpg',
+      description: ''},
+    {title: 'VP Skin for 3M Thinsulate', image: 'assets/images/commercial/threemThinsulate.jpg',
+      description: ''},
+    {title: '3M Vehicle Advertisement', image: 'assets/images/commercial/threemVehicle.png',
+      description: ''},
+    {title: 'VP Skin for 3M Window Film', image: 'assets/images/commercial/threemWindowFilm.png',
+      description: ''}
+  ];
 
 }])
 
