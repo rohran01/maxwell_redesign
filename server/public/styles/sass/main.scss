@@ -210,6 +210,20 @@ iframe {
   }
 }
 
+.undone-content {
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  .undone-image {
+    margin-top: 20px;
+    border: 1px solid $black;
+  }
+  h3 {
+    color: $white;
+    }
+}
+
 //SKILLS SECTION//
 
 .one-skill {

@@ -721,6 +721,16 @@ iframe {
     display: block;
     z-index: -100; }
 
+.undone-content {
+  width: 100%; }
+  .undone-content a {
+    text-decoration: none; }
+  .undone-content .undone-image {
+    margin-top: 20px;
+    border: 1px solid #243333; }
+  .undone-content h3 {
+    color: #e8e8e8; }
+
 .one-skill p {
   letter-spacing: 1px;
   -webkit-transition: all 200ms ease;
