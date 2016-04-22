@@ -513,15 +513,15 @@ body {
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #e8e8e8; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Life Savers", "Raleway", cursive;
-  color: #e8e8e8; }
+  font-family: "Life Savers", "Raleway", cursive; }
 
 h1 {
   font-size: 86px;
@@ -590,7 +590,7 @@ nav {
 
 .title {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 19px;
   background-color: rgba(212, 69, 50, 0.6);
   color: #e8e8e8; }
 
@@ -652,12 +652,12 @@ nav {
   -webkit-column-gap: 1em; }
 
 .work-holder {
-  overflow-y: hidden;
-  padding: 20px;
+  overflow: hidden;
   cursor: pointer;
   background-color: #e8e8e8;
   border: 1px solid #243333;
   display: inline-block;
+  margin-top: 10px;
   margin-right: 0.25rem;
   padding: 1rem;
   width: 100%; }
@@ -670,7 +670,6 @@ iframe {
   height: auto; }
 
 .image-holder {
-  overflow: hidden;
   padding: 10px;
   position: relative;
   cursor: pointer;
@@ -683,6 +682,7 @@ iframe {
     position: absolute;
     top: 400px;
     left: 0;
+    clear: both;
     padding-top: 10px;
     opacity: 0.8;
     background-color: transparent;
@@ -710,9 +710,12 @@ iframe {
       -o-transition: right 500ms ease 100ms;
       transition: right 500ms ease 100ms; }
   .image-holder:hover > .image-slideover {
+    display: block;
     top: 0;
+    clear: both;
     background-color: #243333;
-    color: #e8e8e8; }
+    color: #e8e8e8;
+    overflow: hidden; }
   .image-holder:hover > .image-slideover p {
     left: 0; }
   .image-holder:hover > .image-slideover h4 {
@@ -733,19 +736,22 @@ iframe {
   .undone-content h3 {
     color: #e8e8e8; }
 
-.one-skill p {
-  font-size: 24px;
-  letter-spacing: 1px;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease; }
-.one-skill:hover > div {
-  color: #e8e8e8; }
-  .one-skill:hover > div i {
-    margin-right: 8px; }
-  .one-skill:hover > div p {
-    letter-spacing: 8px; }
+.one-skill {
+  width: 75%;
+  margin: 0 auto; }
+  .one-skill p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  .one-skill:hover > div {
+    color: #e8e8e8; }
+    .one-skill:hover > div i {
+      margin-right: 8px; }
+    .one-skill:hover > div p {
+      letter-spacing: 8px; }
 
 .skill-name, .skill-rating {
   display: block;
