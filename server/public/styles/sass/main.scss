@@ -1,0 +1,345 @@
+@import 'imports/normalize';
+@import 'imports/config';
+@import 'imports/mixins';
+@import 'imports/responsive';
+@import url(https://fonts.googleapis.com/css?family=Life+Savers);
+@import url(https://fonts.googleapis.com/css?family=Unkempt|Text+Me+One|Roboto);
+@import 'imports/grid';
+@import 'imports/type';
+
+
+
+//NAV BAR//
+
+nav {
+  width: 10%;
+  margin: 1.5%;
+  display: block;
+  position: fixed;
+  background-color: $yellowBackground;
+  border: 1px $yellowDark solid;
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+  }
+  li {
+    display: block;
+    padding: 16px 0;
+    width: 100%;
+    color: $black;
+    font-size: 24px;
+    font-weight: lighter;
+    -webkit-transition: all 400ms;
+      -moz-transition: all 400ms ;
+        -o-transition: all 400ms ;
+            transition: all 400ms;
+    &:hover {
+      background-color: $yellowDark;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $yellowBackground;
+      color: $yellowDark;
+    }
+  }
+}
+
+//TITLE SECTION//
+
+.title {
+  width: 100%;
+  margin-top: 19px;
+  background-color: $redBackground;
+  color: $white;
+}
+
+.name {
+  height: 700px;
+  padding-top: 200px;
+  .tagline {
+    width: 45%;
+    height: 200px;
+    margin: 20px auto;
+    font-family: 'Unkempt', serif;
+    p, .first, .period {
+      margin: 0;
+      text-align: right;
+    }
+    .story-container {
+      display: block;
+      float: left;
+      width: 31%;
+      padding-right: 1%;
+      .first {
+        margin-top: -20px;
+        font-size: 40px;
+        color: $yellow;
+      }
+    }
+    .period-container {
+      display: block;
+      float: left;
+      width: 65%;
+      .period {
+        margin-top: -20px;
+        font-size: 62px;
+        color: $red;
+      }
+    }
+  }
+}
+
+//PROFILE SECTION//
+
+.profile {
+  .splash {
+    width: 100%;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 24px;
+    color: $white;
+  }
+}
+
+//BODY OF WORK SECTION//
+
+.work {
+  nav {
+    margin: 20px 0;
+    position: static;
+    width: calc(100% - 2px);
+    ul {
+      height: 70px;
+      display: block;
+    }
+    li {
+      width: calc(100% / 5);
+      display: block;
+      float: left;
+    }
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+.work-view {
+   -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+   -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+}
+.work-holder {
+  overflow: hidden;
+  cursor: pointer;
+  background-color: $white;
+  border: 1px solid $black;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right:  0.25rem;
+  padding:  1rem;
+  width:  100%;
+}
+.video-title {
+  color: $black;
+}
+iframe {
+  width: 100%;
+  height: auto;
+}
+.image-holder {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  background-color: $white;
+  border: 1px solid $black;
+  .image-slideover {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    clear: both;
+    padding-top: 10px;
+    opacity: 0.8;
+    background-color: transparent;
+    color: transparent;
+    -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+          transition: all 500ms ease;
+    p {
+      position: relative;
+      left: -300px;
+      margin: 10px auto;
+      width: 90%;
+      font-size: 24px;
+      -webkit-transition: left 700ms ease 100ms;
+        -moz-transition: left 700ms ease 100ms;
+          -o-transition: left 700ms ease 100ms;
+            transition: left 700ms ease 100ms;
+    }
+    h4 {
+      position: relative;
+      right: -300px;
+      font-size: 36px;
+      -webkit-transition: right 500ms ease 100ms;
+        -moz-transition: right 500ms ease 100ms;
+          -o-transition: right 500ms ease 100ms;
+            transition: right 500ms ease 100ms;
+    }
+  }
+  &:hover > .image-slideover {
+    display: block;
+    top: 0;
+    clear: both;
+    background-color: $black;
+    color: $white;
+    overflow: hidden;
+  }
+  &:hover > .image-slideover p{
+    left: 0;
+  }
+  &:hover > .image-slideover h4 {
+    right: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: -100;
+  }
+}
+
+.undone-content {
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  .undone-image {
+    margin-top: 20px;
+    border: 1px solid $black;
+  }
+  h3 {
+    color: $white;
+    }
+}
+
+//SKILLS SECTION//
+
+.one-skill {
+  width: 75%;
+  margin: 0 auto;
+  p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+  }
+  &:hover > div{
+    color: $white;
+    i {
+      margin-right: 8px
+    }
+    p {
+      letter-spacing: 8px;
+    }
+  }
+}
+.skill-name, .skill-rating {
+  display: block;
+  float: left;
+  width: calc(50% - 20px);
+}
+.skill-name {
+  text-align: right;
+  padding-right: 10px
+}
+.skill-rating {
+  text-align: left;
+  padding-left: 10px;
+  i {
+    position: relative;
+    top: 14px;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+  }
+  .negative {
+    opacity: 0.4;
+  }
+}
+
+//EXPERIENCE SECTION//
+
+.experience-category {
+  text-align: left;
+  font-weight: bold;
+  color: $black;
+}
+.full-width {
+  width: 100%;
+	border: 1px solid $black;
+}
+.one-experience {
+  width: 100%;
+}
+.experience-container {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: left;
+  .experience-left {
+    margin-right: 4.2544%;
+  }
+  .employer, .job-title {
+    color: $black;
+    font-size: 24px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+}
+
+//CLIENTS SECTION//
+
+.clients {
+  height: 700px;
+}
+
+//CONTACT SECTION//
+.contact {
+  height: 700px;
+}
+.contact h3 {
+  color: $black;
+  font-weight: bolder;
+}
+.contact-icons {
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  i {
+    margin: 0 20px;
+    position: relative;
+    top: 0;
+    color: $black;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+    &:hover {
+      top: -10px;
+    }
+    &:active {
+      top: -15px;
+    }
+  }
+}

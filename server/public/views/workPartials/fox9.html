@@ -1,0 +1,11 @@
+<div class="work-view">
+  <div class="video-view">
+    <div class="work-holder" ng-repeat="item in fox9">
+      <iframe src={{item.url}} frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="video-info">
+        <h4 class="video-title">{{item.title}}</h4>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

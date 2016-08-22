@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="webApp">
+<head>
+  <title>Maxwell Freudenthal</title>
+  <link href='https://fonts.googleapis.com/css?family=Life+Savers' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="vendor/angular-route/angular-route.min.js"></script>
+  <script src="assets/scripts/client.min.js"></script>
+  <base href="/">
+</head>
+
+<body ng-controller="MainController">
+
+  <nav class="main-nav">
+    <ul>
+      <li ng-click="goTo('name')">Maxwell</li>
+      <li ng-click="goTo('profile')">Profile</li>
+      <li ng-click="goTo('work')">Body of Work</li>
+      <li ng-click="goTo('skills')">Skills</li>
+      <li ng-click="goTo('experience')">Experience</li>
+      <li ng-click="goTo('clients')">Clients</li>
+      <li ng-click="goTo('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <div id="name" class="panel name">
+    <div class="container">
+      <h1>Maxwell Freudenthal</h1>
+      <hr />
+      <h3>Multimedia Designer</h3>
+
+      <div class="tagline">
+        <h4>Story comes first. Period.</h4>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="profile" class="panel profile">
+    <div class="container">
+      <h2 class="title">Profile</h2>
+
+      <img class="splash" src="assets/images/splashPic.jpg" />
+      <p>
+        I grew up in Wautoma, Wisconsin, a town of 2,000 people. I spent my early years reading books, singing songs, painting pictures, and watching movies.</br></br>
+
+        I left home and ventured to the magical land of Minneapolis to pursue a career in art. Four years later, I graduated from the Minneapolis College of Art and Design with a BFA in Filmmaking. While in school, I produced a feature-length musical and started designing at 3M full-time. After my contract ended, I found myself in the Creative Services department of FOX9, doing all the things I love.</br></br>
+
+        I now live in St Paul with my dog, Chewie. In my free time I enjoy reading books, singing songs, painting pictures, and watching movies.</br></br>
+
+        I guess some things never change.</br></br>
+      </p>
+
+    </div>
+  </div>
+
+  <div ng-controller="WorkController" id="work" class="panel work">
+    <div class="container">
+      <h2 class="title">Body of Work</h2>
+      <nav class="work-nav">
+        <ul>
+          <a href='/'><li>Film</li></a>
+          <a href='/fox9'><li >FOX9</li></a>
+          <a href='/paintings'><li >Paintings</li></a>
+          <a href='/commercial'><li >3M &amp More</li></a>
+          <a href='/undone'><li>Undone</li></a>
+        </ul>
+      </nav>
+
+      <div ng-view>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="skills" class="panel skills">
+    <div class="container">
+      <h2 class="title">Skills</h2>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>Adobe Creative Suite</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>Final Cut</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>Motion</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>AVID</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>XClyps/PowerClips</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>iNews</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-skill">
+        <div class="skill-name">
+          <p>Microsoft Office</p>
+        </div>
+        <div class="skill-rating">
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x negative" aria-hidden="true"></i>
+          <i class="fa fa-thumbs-o-up fa-3x negative" aria-hidden="true"></i>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="experience" class="panel experience">
+    <div class="container">
+      <h2 class="title">Experience</h2>
+
+      <h3 class="experience-category">Career</h3>
+      <hr class="full-width" />
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">FOX9 KMSP/WFTC</h4>
+          <p class="time-spent">2014-2016</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Creative Services Producer</h4>
+          <p class="job-description">Worked both on my own and with other in the department to concept on-air promotions and execute those concepts. This included shooting, lighting, editing, animating, and coordinating with talent. As a designer, I created logos, print/web graphics, and signage for various station events. I was a key designer for The Jason Show, creating the logo, all in-show animations, and on-air promotions. I was also an integral part of FOX9's re-branding efforts, where I developed a new logo and visual lookt hat was clean, classy, and contemporary. I also created a marketing strategy to define our "So much more" tagline through on-air promotions.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">3M Dynamic Merchandising</h4>
+          <p class="time-spent">2012-2014</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Content Producer</h4>
+          <p class="job-description">Graphic design, video editing, special effects, file formatting, and support of research and development projects. Created or manipulated existing content for a range of clients, including; Anheuser Busch, Coca-Cola, Best Buy Mobile, Walmart, Circle K, Mercedes Benz, Honda, Verizon, Deutsche Telekom, Wells Fargo, and other 3M divisions. As the only graphic artist in the division, I frequently supported the business and marketing teams as well. I developed and maintained a visual identity for our Dynamic Merchandising team, which carried through in sales presentations, video and animation, and printed graphics, as well as a written mission statement of our brand.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Undone: A New Musical</h4>
+          <p class="time-spent">2010-2012</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Writer, Director, Producer</h4>
+          <p class="job-description"><a href="http://www.undonethemusical.com/WINNER_OUT_Twin_Cities_Film_Fest.html" target="_blank">Undone</a> is an award-winning, feature-length musical that I completed while I was a student at MCAD. As the creator, I oversaw the entire production from planning to post, and maintained the business entity, Undone: A New Musical, LLC. The film took over 2 years to complete and employed over 100 local professionals, including crew, actors, and musicians.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <h3 class="experience-category">Education</h3>
+      <hr class="full-width" />
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Minneapolis College of Art and Design</h4>
+          <p class="time-spent">2008-2012</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">BFA in Film-Making</h4>
+          <p class="job-description"></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="one-experience">
+        <div class="experience-container experience-left span4">
+          <h4 class="employer">Rocky Mountain College of Art and Design</h4>
+          <p class="time-spent">2008</p>
+        </div>
+        <div class="experience-container experience-right span8">
+          <h4 class="job-title">Character Development Training</h4>
+          <p class="job-description"></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="clients" class="panel clients">
+    <div class="container">
+      <h2 class="title">Clients</h2>
+
+    </div>
+  </div>
+
+  <div id="contact" class="panel contact">
+    <div class="container">
+      <h2 class="title">Contact</h2>
+      <h3>I would love to hear from you!</h3>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/mfreudenthal" target="_blank"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/maxwell-freudenthal-60162876" target="_blank"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
+        <a href="https://vimeo.com/user4838767" target="_blank"><i class="fa fa-vimeo fa-5x" aria-hidden="true"></i></a>
+        <a href="mailto:maxwellfreaudenthal@gmail.com.com?Subject=Hello%20Maxwell" target="_top"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
