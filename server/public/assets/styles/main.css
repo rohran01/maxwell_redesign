@@ -563,11 +563,8 @@ nav {
   margin: 1.5%;
   display: block;
   position: fixed;
-<<<<<<< HEAD
   background-color: rgba(209, 229, 80, 0.6);
-=======
   background-color: rgba(209, 229, 80, 0.4);
->>>>>>> 3b3b279a70917c0e7c08bb6d195802479d5e02d7
   border: 1px #a0b41b solid; }
   nav ul {
     margin: 0;
@@ -589,11 +586,8 @@ nav {
       background-color: #a0b41b;
       cursor: pointer; }
     nav li:active {
-<<<<<<< HEAD
       background-color: rgba(209, 229, 80, 0.6);
-=======
       background-color: rgba(209, 229, 80, 0.4);
->>>>>>> 3b3b279a70917c0e7c08bb6d195802479d5e02d7
       color: #a0b41b; }
 
 .title {
