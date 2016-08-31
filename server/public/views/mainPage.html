@@ -3,6 +3,7 @@
 <head>
   <title>Maxwell Freudenthal</title>
   <link href='https://fonts.googleapis.com/css?family=Life+Savers' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/main.css" />
   <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
   <script src="vendor/angular/angular.min.js"></script>
@@ -11,9 +12,54 @@
   <base href="/">
 </head>
 
-<body ng-controller="MainController">
+<body>
 
-  <nav class="main-nav">
+  <nav class="nav-bar">
+    <ul>
+      <li ng-click="goTo('name')">Maxwell</li>
+      <li ng-click="goTo('profile')">Profile</li>
+      <li ng-click="goTo('work')">Body of Work</li>
+      <li ng-click="goTo('skills')">Skills</li>
+      <li ng-click="goTo('experience')">Experience</li>
+      <li ng-click="goTo('clients')">Clients</li>
+      <li ng-click="goTo('contact')">Contact</li>
+    </ul>
+    <div class="u-cf"></div>
+  </nav>
+  <div class="u-cf"></div>
+
+  <div id="name" class="section photo">
+    <div class="container">
+      <div class="twelve columns photo-backdrop">
+        <div class="four columns">
+          <button class="btn">Button 1</button>
+        </div>
+        <div class="four columns">
+          <button class="btn">Button 2</button>
+        </div>
+        <div class="four columns">
+          <button class="btn">Button 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="profile" class="section about-me">
+    <div class="container">
+
+      <h1 class="section-heading">About me....</h1>
+      <p>
+        I grew up in Wautoma, Wisconsin, a town of 2,000 people. I spent my early years reading books, singing songs, painting pictures, and watching movies.</br></br>
+        I left home and ventured to the magical land of Minneapolis to pursue a career in art. Four years later, I graduated from the Minneapolis College of Art and Design with a BFA in Filmmaking. While in school, I produced a feature-length musical and started designing at 3M full-time. After my contract ended, I found myself in the Creative Services department of FOX9, doing all the things I love.</br></br>
+        I now live in St Paul with my dog, Chewie. In my free time I enjoy reading books, singing songs, painting pictures, and watching movies.</br></br>
+        I guess some things never change.</br></br>
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- <nav class="main-nav">
     <ul>
       <li ng-click="goTo('name')">Maxwell</li>
       <li ng-click="goTo('profile')">Profile</li>
@@ -275,7 +321,7 @@
 
   <footer>
 
-  </footer>
+  </footer> -->
 </body>
 
 </html>
