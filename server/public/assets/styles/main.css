@@ -878,15 +878,12 @@ button {
     border: 1px solid rgba(4, 143, 249, 0.8); }
 
 .section {
-  padding: 9rem 0 7rem; }
+  padding: 7rem 0 7rem; }
   .section .section-heading {
     color: #f4f7f9;
     transition: all 0.2s ease; }
   .section:hover .section-heading {
     color: #f93504; }
-
-.section-heading {
-  color: #f4f7f9; }
 
 .nav-bar {
   z-index: 1000;
@@ -926,31 +923,31 @@ button {
   margin-top: 73.33px;
   background-image: url("../images/splashPicBW.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto; }
-
-.photo-backdrop {
-  background-color: rgba(72, 73, 73, 0.6);
-  padding: 10rem 0 10rem 8%;
-  transition: all 0.3s ease; }
-  .photo-backdrop .headline {
-    font-size: 11rem; }
-  .photo-backdrop .headline, .photo-backdrop .tagline {
-    transform: rotate(0);
-    color: #f4f7f9;
-    transition: all 0.2s ease; }
-  .photo-backdrop:hover .headline {
-    -ms-transform: rotate(2deg);
-    /* IE 9 */
-    -webkit-transform: rotate(2deg);
-    /* Safari */
-    color: #048ff9; }
-  .photo-backdrop:hover .tagline {
-    -ms-transform: rotate(-2deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-2deg);
-    /* Safari */
-    transform: rotate(-2deg);
-    color: #f9dd04; }
+  background-size: 100% auto;
+  padding-bottom: 9rem; }
+  .photo .photo-backdrop {
+    background-color: rgba(72, 73, 73, 0.6);
+    padding: 10rem 0 10rem 8%;
+    transition: all 0.3s ease; }
+    .photo .photo-backdrop .headline {
+      font-size: 11rem; }
+    .photo .photo-backdrop .headline, .photo .photo-backdrop .tagline {
+      transform: rotate(0);
+      color: #f4f7f9;
+      transition: all 0.2s ease; }
+    .photo .photo-backdrop:hover .headline {
+      -ms-transform: rotate(2deg);
+      /* IE 9 */
+      -webkit-transform: rotate(2deg);
+      /* Safari */
+      color: #048ff9; }
+    .photo .photo-backdrop:hover .tagline {
+      -ms-transform: rotate(-2deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-2deg);
+      /* Safari */
+      transform: rotate(-2deg);
+      color: #f9dd04; }
 
 .about-me {
   color: #f4f7f9; }

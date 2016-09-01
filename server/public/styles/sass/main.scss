@@ -30,7 +30,7 @@ button {
 }
 
 .section {
-  padding: 9rem 0 7rem;
+  padding: 7rem 0 7rem;
   .section-heading {
     color: $white;
     transition: all 0.2s ease;
@@ -40,10 +40,6 @@ button {
       color: $red;
     }
   }
-}
-
-.section-heading {
-  color: $white;
 }
 
 //NAV BAR//
@@ -87,43 +83,44 @@ button {
       }
     }
   }
-
-
 }
+
 
 .photo {
   margin-top: 73.33px;
   background-image: url('../images/splashPicBW.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-bottom: 9rem;
+  .photo-backdrop {
+    background-color: rgba($black, 0.6);
+    padding: 10rem 0 10rem 8%;
+    transition: all 0.3s ease;
+    .headline {
+      font-size: 11rem;
+    }
+    .headline, .tagline {
+      transform: rotate(0);
+      color: $white;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      .headline {
+        -ms-transform: rotate(2deg); /* IE 9 */
+        -webkit-transform: rotate(2deg); /* Safari */
+        color: $blue;
+      }
+      .tagline {
+        -ms-transform: rotate(-2deg); /* IE 9 */
+        -webkit-transform: rotate(-2deg); /* Safari */
+        transform: rotate(-2deg);
+        color: $yellow;
+      }
+    }
+  }
 }
 
-.photo-backdrop {
-  background-color: rgba($black, 0.6);
-  padding: 10rem 0 10rem 8%;
-  transition: all 0.3s ease;
-  .headline {
-    font-size: 11rem;
-  }
-  .headline, .tagline {
-    transform: rotate(0);
-    color: $white;
-    transition: all 0.2s ease;
-  }
-  &:hover {
-    .headline {
-      -ms-transform: rotate(2deg); /* IE 9 */
-      -webkit-transform: rotate(2deg); /* Safari */
-      color: $blue;
-    }
-    .tagline {
-      -ms-transform: rotate(-2deg); /* IE 9 */
-      -webkit-transform: rotate(-2deg); /* Safari */
-      transform: rotate(-2deg);
-      color: $yellow;
-    }
-  }
-}
+
 
 
 

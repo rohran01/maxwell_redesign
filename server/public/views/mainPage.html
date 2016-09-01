@@ -6,9 +6,10 @@
   <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/main.css" />
   <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
-  <script src="vendor/angular/angular.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <!-- <script src="vendor/angular/angular.min.js"></script>
   <script src="vendor/angular-route/angular-route.min.js"></script>
-  <script src="assets/scripts/client.min.js"></script>
+  <script src="assets/scripts/client.min.js"></script> -->
   <base href="/">
 </head>
 
@@ -49,7 +50,6 @@
 
   <div id="profile" class="section about-me">
     <div class="container">
-
       <h1 class="section-heading">About me....</h1>
       <p>
         I grew up in Wautoma, Wisconsin, a town of 2,000 people. I spent my early years reading books, singing songs, painting pictures, and watching movies.</br></br>
@@ -72,12 +72,6 @@
         <iframe src='https://player.vimeo.com/video/161862885?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="video-holder">
-        <iframe src='https://player.vimeo.com/video/161863815?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      <div class="video-holder">
-        <iframe src='https://player.vimeo.com/video/161862930?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/161862993?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="video-holder">
@@ -90,6 +84,12 @@
         <iframe src='https://player.vimeo.com/video/161863154?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="video-holder">
+        <iframe src='https://player.vimeo.com/video/161863324?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="video-holder">
+        <iframe src='https://player.vimeo.com/video/161862930?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/161863715?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
 
@@ -97,8 +97,9 @@
         <iframe src='https://player.vimeo.com/video/161863262?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="video-holder">
-        <iframe src='https://player.vimeo.com/video/161863324?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src='https://player.vimeo.com/video/161863815?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
+
       <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/161863299?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
@@ -118,6 +119,7 @@
         <iframe src='https://player.vimeo.com/video/161864972?color=048FF9' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
+    <div class="twelve columns film-strip"></div>
     <div class="u-cf"></div>
   </div>
 
@@ -512,3 +514,21 @@
 </body>
 
 </html>
+
+<!-- <script>
+  $(document).ready(function() {
+
+    function doSomething() {
+      alert('POP!!!!');
+    }
+
+    (function loop() {
+        var rand = Math.round(Math.random() * (30000 - 5000)) + 500;
+        setTimeout(function() {
+                //alert('A');
+                doSomething();
+                loop();
+        }, rand);
+    }());
+  })
+</script> -->
