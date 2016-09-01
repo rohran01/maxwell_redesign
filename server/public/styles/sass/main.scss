@@ -61,11 +61,27 @@ button {
     padding: 2rem 0;
     color: $white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    // transition: all 0.3s ease;
+    .icon {
+      display: block;
+      height: 32px;
+      transition: all 0.3s ease;
+    }
+    .label {
+      display: none;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
     &:hover {
       color: $yellow;
-      background-color: rgba($blue, 0.8);
+      // background-color: rgba($blue, 0.8);
       // transform: skewX(-5deg);
+      .icon {
+        display: none;
+      }
+      .label {
+        display: block;
+      }
     }
   }
   li.contacts {

@@ -875,7 +875,7 @@ button {
   transition: all 0.3s ease; }
   button:hover {
     color: rgba(249, 221, 4, 0.8);
-    border: 1px solid rgba(4, 143, 249, 0.8); }
+    border: 1px solid rgba(5, 230, 255, 0.8); }
 
 .section {
   padding: 7rem 0 7rem; }
@@ -883,7 +883,7 @@ button {
     color: #f4f7f9;
     transition: all 0.2s ease; }
   .section:hover .section-heading {
-    color: #f93504; }
+    color: #F93959; }
 
 .nav-bar {
   z-index: 1000;
@@ -901,11 +901,21 @@ button {
     text-align: center;
     padding: 2rem 0;
     color: #f4f7f9;
-    cursor: pointer;
-    transition: all 0.3s ease; }
+    cursor: pointer; }
+    .nav-bar li.highlight .icon {
+      display: block;
+      height: 32px;
+      transition: all 0.3s ease; }
+    .nav-bar li.highlight .label {
+      display: none;
+      margin: 0;
+      transition: all 0.3s ease; }
     .nav-bar li.highlight:hover {
-      color: #f9dd04;
-      background-color: rgba(4, 143, 249, 0.8); }
+      color: #f9dd04; }
+      .nav-bar li.highlight:hover .icon {
+        display: none; }
+      .nav-bar li.highlight:hover .label {
+        display: block; }
   .nav-bar li.contacts {
     display: block;
     float: right;
@@ -940,7 +950,7 @@ button {
       /* IE 9 */
       -webkit-transform: rotate(2deg);
       /* Safari */
-      color: #048ff9; }
+      color: #05E6FF; }
     .photo .photo-backdrop:hover .tagline {
       -ms-transform: rotate(-2deg);
       /* IE 9 */
@@ -982,7 +992,7 @@ button {
       /* Old WebKit */
       filter: grayscale(0); }
     .video-holder iframe .play:hover {
-      background-color: #048ff9; }
+      background-color: #05E6FF; }
 
 @keyframes color-fade {
   0% {
@@ -990,9 +1000,9 @@ button {
   25% {
     color: #f9dd04; }
   50% {
-    color: #f93504; }
+    color: #F93959; }
   75% {
-    color: #048ff9; }
+    color: #05E6FF; }
   100% {
     color: #f4f7f9; } }
 
