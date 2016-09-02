@@ -56,15 +56,22 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 11%;
+    width: 12%;
     text-align: center;
     padding: 2rem 0;
     color: $white;
     cursor: pointer;
+    font-size:
     // transition: all 0.3s ease;
+    p {
+      display: block;
+      margin: 0;
+    }
     .icon {
       display: block;
       height: 32px;
+      position: relative;
+      top: 7px;
       transition: all 0.3s ease;
     }
     .label {
