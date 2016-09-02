@@ -17,13 +17,13 @@
 
   <nav class="nav-bar">
     <ul>
-      <li class="highlight" ng-click="goTo('name')"><p>Maxwell</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-user icon" aria-hidden="true"></i><p class="label">About me...</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-briefcase icon" aria-hidden="true"></i><p class="label">Commercial</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-thumbs-up icon" aria-hidden="true"></i><p class="label">Skills</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-film icon" aria-hidden="true"></i><p class="label">Film</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><p class="label">Experience</p></li>
-      <li class="highlight" ng-click="goTo('name')"><i class="fa fa-users icon" aria-hidden="true"></i><p class="label">Clients</p></li>
+      <li class="highlight" href="#maxwell"><p>Maxwell</p></li>
+      <li class="highlight" href="#aboutMe"><i class="fa fa-user icon" aria-hidden="true"></i><p class="label">About me...</p></li>
+      <li class="highlight" href="#commercial"><i class="fa fa-briefcase icon" aria-hidden="true"></i><p class="label">Commercial</p></li>
+      <li class="highlight" href="#skills"><i class="fa fa-thumbs-up icon" aria-hidden="true"></i><p class="label">Skills</p></li>
+      <li class="highlight" href="#film"><i class="fa fa-film icon" aria-hidden="true"></i><p class="label">Film</p></li>
+      <li class="highlight" href="#experience"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><p class="label">Experience</p></li>
+      <li class="highlight" href="#clients"><i class="fa fa-users icon" aria-hidden="true"></i><p class="label">Clients</p></li>
       <!-- <li class="highlight" ng-click="goTo('profile')">Profile</li>
       <li class="highlight" ng-click="goTo('work')">Body of Work</li>
       <li class="highlight" ng-click="goTo('skills')">Skills</li>
@@ -44,7 +44,7 @@
   </nav>
   <div class="u-cf"></div>
 
-  <div id="name" class="section photo">
+  <div id="maxwell" class="section photo">
     <div class="container">
       <div class="twelve columns photo-backdrop">
         <h1 class="headline">Maxwell Freudenthal</h1>
@@ -54,7 +54,7 @@
     <div class="u-cf"></div>
   </div>
 
-  <div id="profile" class="section about-me">
+  <div id="aboutMe" class="section about-me">
     <div class="container">
       <h1 class="section-heading">About me....</h1>
       <p>
@@ -234,6 +234,44 @@
     </div>
   </div>
 
+  <div id="film" class='section commercial'>
+    <div class="twelve columns film-strip">
+      <h1 class="section-heading">Film</h1>
+    </div>
+    <div class="u-cf"></div>
+
+    <div class="twelve columns work-holder">
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/93672257?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/92856230?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/21698859?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/93288070?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/15367947?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/15375316?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/25569801?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/15373779?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="film-holder">
+        <iframe src='https://player.vimeo.com/video/16113718?color=048FF9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="twelve columns film-strip"></div>
+    <div class="u-cf"></div>
+  </div>
   <!-- <div id="test" class="section photo">
     <div class="container">
       <div class="twelve columns photo-backdrop">
@@ -521,20 +559,22 @@
 
 </html>
 
-<!-- <script>
+<script>
   $(document).ready(function() {
 
-    function doSomething() {
-      alert('POP!!!!');
-    }
-
-    (function loop() {
-        var rand = Math.round(Math.random() * (30000 - 5000)) + 500;
-        setTimeout(function() {
-                //alert('A');
-                doSomething();
-                loop();
-        }, rand);
-    }());
+    $('.highlight').on('click', function() {
+      var target = $(this.getAttribute('href'));
+      if ($(this).attr('href') === '#maxwell') {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: $('body').offset().top
+        }, 1000);
+      } else if ($(this).attr('href') !== '#maxwell' && target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    })
   })
-</script> -->
+</script>

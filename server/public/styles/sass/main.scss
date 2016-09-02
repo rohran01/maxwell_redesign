@@ -61,7 +61,6 @@ button {
     padding: 2rem 0;
     color: $white;
     cursor: pointer;
-    font-size:
     // transition: all 0.3s ease;
     p {
       display: block;
@@ -173,6 +172,29 @@ button {
   margin: 0;
   padding: 0;
   height: 150px;
+  iframe {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+    &:hover {
+      -webkit-filter: grayscale(0); /* Old WebKit */
+      filter: grayscale(0);
+    }
+    .play:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+.film-holder {
+  display: block;
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  height: 350px;
   iframe {
     width: 100%;
     height: 100%;
