@@ -120,6 +120,7 @@ button {
     transition: all 0.3s ease;
     .headline {
       font-size: 11rem;
+
     }
     .headline, .tagline {
       transform: rotate(0);
@@ -130,7 +131,9 @@ button {
       .headline {
         -ms-transform: rotate(2deg); /* IE 9 */
         -webkit-transform: rotate(2deg); /* Safari */
-        color: $blue;
+        // color: $blue;
+        // animation: color-fade 3s infinte;
+
       }
       .tagline {
         -ms-transform: rotate(-2deg); /* IE 9 */

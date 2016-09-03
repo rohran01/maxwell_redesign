@@ -16,7 +16,7 @@
 <body>
 
   <nav class="nav-bar">
-    <ul>
+    <ul class="scroll-links">
       <li class="highlight" href="#maxwell"><p>Maxwell</p></li>
       <li class="highlight" href="#aboutMe"><i class="fa fa-user icon" aria-hidden="true"></i><p class="label">About me...</p></li>
       <li class="highlight" href="#commercial"><i class="fa fa-briefcase icon" aria-hidden="true"></i><p class="label">Commercial</p></li>
@@ -24,20 +24,15 @@
       <li class="highlight" href="#film"><i class="fa fa-film icon" aria-hidden="true"></i><p class="label">Film</p></li>
       <li class="highlight" href="#experience"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><p class="label">Experience</p></li>
       <li class="highlight" href="#clients"><i class="fa fa-users icon" aria-hidden="true"></i><p class="label">Clients</p></li>
-      <!-- <li class="highlight" ng-click="goTo('profile')">Profile</li>
-      <li class="highlight" ng-click="goTo('work')">Body of Work</li>
-      <li class="highlight" ng-click="goTo('skills')">Skills</li>
-      <li class="highlight" ng-click="goTo('experience')">Experience</li>
-      <li class="highlight" ng-click="goTo('clients')">Clients</li>
-      <li class="highlight" ng-click="goTo('contact')">Contact</li> -->
-      <li class="contacts">
+
+      <!-- <li class="contacts">
         <div>
           <a href="https://www.facebook.com/mfreudenthal" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/maxwell-freudenthal-60162876" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           <a href="https://vimeo.com/user4838767" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
           <a href="mailto:maxwellfreaudenthal@gmail.com.com?Subject=Hello%20Maxwell" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
-      </li>
+      </li> -->
     </ul>
 
     <div class="u-cf"></div>
@@ -576,5 +571,38 @@
         }, 1000);
       }
     })
+
+    var lastId,
+        topMenu = $('.scroll-links'),
+        topMenuHeight = $('.nav-bar').outerHeight(),
+        // All list items
+        menuItems = topMenu.find('li'),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function(){
+          var item = $($(this).attr("href"));
+          if (item.length) { return item; }
+        });
+
+        console.log(topMenuHeight);
+
+    $(window).on('scroll', function() {
+       // Get container scroll position
+       var fromTop = $(this).scrollTop() + topMenuHeight;
+
+       // Get id of current scroll item
+       var cur = scrollItems.map(function(){
+         if ($(this).offset().top < fromTop)
+           return this;
+         })
+
+      // Get the id of the current element
+      cur = cur[cur.length-1];
+      var id = cur && cur.length ? cur[0].id : "";
+      console.log(id);
+    })
+
+    // $('.section').on('hover', function() {
+    //   console.log($(this).attr('id'));
+    // })
   })
 </script>
