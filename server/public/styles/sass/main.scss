@@ -30,7 +30,7 @@ button {
 }
 
 .section {
-  padding: 7rem 0 7rem;
+  padding: 8rem 0 7rem;
   .section-heading {
     color: $white;
     transition: all 0.2s ease;
@@ -68,16 +68,8 @@ button {
     p {
       display: block;
       margin: 0;
-    }
-    &.hovered {
-      .icon {
-        display: none;
-      }
-      .label {
-        display: block;
-        border-bottom: 2px solid $yellow;
-        border-top: 2px solid $yellow;
-      }
+      border-bottom: 2px solid rgba($black, 0);
+      border-top: 2px solid rgba($black, 0);
     }
     .icon {
       display: block;
@@ -92,6 +84,16 @@ button {
       color: $yellow;
       transition: all 0.3s ease;
     }
+    &.hovered {
+      .icon {
+        display: none;
+      }
+      .label {
+        display: block;
+        border-bottom: 2px solid $blue;
+        border-top: 2px solid $blue;
+      }
+    }
 
     &:hover {
       // color: $yellow;
@@ -102,6 +104,7 @@ button {
       }
       .label {
         display: block;
+        opacity: 1;
       }
     }
   }

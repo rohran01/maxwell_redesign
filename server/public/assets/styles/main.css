@@ -878,7 +878,7 @@ button {
     border: 1px solid rgba(5, 230, 255, 0.8); }
 
 .section {
-  padding: 7rem 0 7rem; }
+  padding: 8rem 0 7rem; }
   .section .section-heading {
     color: #f4f7f9;
     transition: all 0.2s ease; }
@@ -906,13 +906,9 @@ button {
     cursor: pointer; }
     .nav-bar li.highlight p {
       display: block;
-      margin: 0; }
-    .nav-bar li.highlight.hovered .icon {
-      display: none; }
-    .nav-bar li.highlight.hovered .label {
-      display: block;
-      border-bottom: 2px solid #f9dd04;
-      border-top: 2px solid #f9dd04; }
+      margin: 0;
+      border-bottom: 2px solid rgba(72, 73, 73, 0);
+      border-top: 2px solid rgba(72, 73, 73, 0); }
     .nav-bar li.highlight .icon {
       display: block;
       height: 32px;
@@ -924,10 +920,17 @@ button {
       margin: 0;
       color: #f9dd04;
       transition: all 0.3s ease; }
+    .nav-bar li.highlight.hovered .icon {
+      display: none; }
+    .nav-bar li.highlight.hovered .label {
+      display: block;
+      border-bottom: 2px solid #05E6FF;
+      border-top: 2px solid #05E6FF; }
     .nav-bar li.highlight:hover .icon {
       display: none; }
     .nav-bar li.highlight:hover .label {
-      display: block; }
+      display: block;
+      opacity: 1; }
   .nav-bar li.contacts {
     display: block;
     float: right;
