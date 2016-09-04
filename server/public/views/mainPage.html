@@ -17,13 +17,13 @@
 
   <nav class="nav-bar">
     <ul class="scroll-links">
-      <li class="highlight" href="#maxwell"><p>Maxwell</p></li>
-      <li class="highlight" href="#aboutMe"><i class="fa fa-user icon" aria-hidden="true"></i><p class="label">About me...</p></li>
-      <li class="highlight" href="#commercial"><i class="fa fa-briefcase icon" aria-hidden="true"></i><p class="label">Commercial</p></li>
-      <li class="highlight" href="#skills"><i class="fa fa-thumbs-up icon" aria-hidden="true"></i><p class="label">Skills</p></li>
-      <li class="highlight" href="#film"><i class="fa fa-film icon" aria-hidden="true"></i><p class="label">Film</p></li>
-      <li class="highlight" href="#experience"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><p class="label">Experience</p></li>
-      <li class="highlight" href="#clients"><i class="fa fa-users icon" aria-hidden="true"></i><p class="label">Clients</p></li>
+      <li class="highlight name" href="#maxwell"><p>Maxwell</p></li>
+      <li class="highlight scrollWatch" href="#aboutMe"><i class="fa fa-user icon" aria-hidden="true"></i><p class="label">About me...</p></li>
+      <li class="highlight scrollWatch" href="#commercial"><i class="fa fa-briefcase icon" aria-hidden="true"></i><p class="label">Commercial</p></li>
+      <li class="highlight scrollWatch" href="#skills"><i class="fa fa-thumbs-up icon" aria-hidden="true"></i><p class="label">Skills</p></li>
+      <li class="highlight scrollWatch" href="#film"><i class="fa fa-film icon" aria-hidden="true"></i><p class="label">Film</p></li>
+      <li class="highlight scrollWatch" href="#experience"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><p class="label">Experience</p></li>
+      <li class="highlight scrollWatch" href="#clients"><i class="fa fa-users icon" aria-hidden="true"></i><p class="label">Clients</p></li>
 
       <li class="contacts">
         <div>
@@ -63,9 +63,9 @@
   </div>
 
   <div id="commercial" class='section commercial'>
-    <div class="twelve columns film-strip">
+    <!-- <div class="twelve columns film-strip">
       <h1 class="section-heading">Commercial Work</h1>
-    </div>
+    </div> -->
     <div class="u-cf"></div>
 
     <div class="twelve columns work-holder">
@@ -120,7 +120,7 @@
         <iframe src='https://player.vimeo.com/video/161864972?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
-    <div class="twelve columns film-strip"></div>
+    <!-- <div class="twelve columns film-strip"></div> -->
     <div class="u-cf"></div>
   </div>
 
@@ -230,41 +230,41 @@
   </div>
 
   <div id="film" class='section commercial'>
-    <div class="twelve columns film-strip">
+    <!-- <div class="twelve columns film-strip">
       <h1 class="section-heading">Film</h1>
-    </div>
+    </div> -->
     <div class="u-cf"></div>
 
     <div class="twelve columns work-holder">
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/93672257?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/92856230?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/21698859?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/93288070?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/15367947?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/15375316?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/25569801?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/15373779?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <div class="film-holder">
+      <div class="video-holder">
         <iframe src='https://player.vimeo.com/video/16113718?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
-    <div class="twelve columns film-strip"></div>
+    <!-- <div class="twelve columns film-strip"></div> -->
     <div class="u-cf"></div>
   </div>
   <!-- <div id="test" class="section photo">
@@ -557,20 +557,7 @@
 <script>
   $(document).ready(function() {
 
-    $('.highlight').on('click', function() {
-      var target = $(this.getAttribute('href'));
-      if ($(this).attr('href') === '#maxwell') {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: $('body').offset().top
-        }, 1000);
-      } else if ($(this).attr('href') !== '#maxwell' && target.length) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 1000);
-      }
-    })
+
 
     var lastId,
         topMenu = $('.scroll-links'),
@@ -583,7 +570,7 @@
           if (item.length) { return item; }
         });
 
-        console.log(topMenuHeight);
+        console.log(menuItems);
 
     $(window).on('scroll', function() {
        // Get container scroll position
@@ -599,10 +586,35 @@
       cur = cur[cur.length-1];
       var id = cur && cur.length ? cur[0].id : "";
       console.log(id);
+
+      if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+
+      //  menuItems.filter("[href='#"+id+"']").children('i').hide();
+      //  menuItems.filter("[href!='#"+id+"']").children('p').hide();
+      menuItems.filter("[href!='#"+id+"']").removeClass('hovered');
+      menuItems.filter("[href='#"+id+"']").addClass('hovered');
+      }
     })
 
     // $('.section').on('hover', function() {
     //   console.log($(this).attr('id'));
     // })
+
+    $('.highlight').on('click', function() {
+      var target = $(this.getAttribute('href'));
+      if ($(this).attr('href') === '#maxwell') {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: $('body').offset().top
+        }, 1000);
+      } else if ($(this).attr('href') !== '#maxwell' && target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: (target.offset().top - 5)
+        }, 1000);
+      }
+    })
   })
 </script>

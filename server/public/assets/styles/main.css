@@ -893,6 +893,8 @@ button {
   background-color: rgba(72, 73, 73, 0.8); }
   .nav-bar ul {
     list-style-type: none; }
+  .nav-bar .name:hover {
+    color: #f9dd04; }
   .nav-bar li.highlight {
     margin: 0;
     display: block;
@@ -905,6 +907,12 @@ button {
     .nav-bar li.highlight p {
       display: block;
       margin: 0; }
+    .nav-bar li.highlight.hovered .icon {
+      display: none; }
+    .nav-bar li.highlight.hovered .label {
+      display: block;
+      border-bottom: 2px solid #f9dd04;
+      border-top: 2px solid #f9dd04; }
     .nav-bar li.highlight .icon {
       display: block;
       height: 32px;
@@ -914,13 +922,12 @@ button {
     .nav-bar li.highlight .label {
       display: none;
       margin: 0;
+      color: #f9dd04;
       transition: all 0.3s ease; }
-    .nav-bar li.highlight:hover {
-      color: #f9dd04; }
-      .nav-bar li.highlight:hover .icon {
-        display: none; }
-      .nav-bar li.highlight:hover .label {
-        display: block; }
+    .nav-bar li.highlight:hover .icon {
+      display: none; }
+    .nav-bar li.highlight:hover .label {
+      display: block; }
   .nav-bar li.contacts {
     display: block;
     float: right;

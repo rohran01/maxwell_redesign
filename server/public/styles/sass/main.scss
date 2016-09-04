@@ -52,6 +52,9 @@ button {
   ul {
     list-style-type: none;
   }
+  .name:hover {
+    color: $yellow;
+  }
   li.highlight {
     margin: 0;
     display: block;
@@ -66,6 +69,16 @@ button {
       display: block;
       margin: 0;
     }
+    &.hovered {
+      .icon {
+        display: none;
+      }
+      .label {
+        display: block;
+        border-bottom: 2px solid $yellow;
+        border-top: 2px solid $yellow;
+      }
+    }
     .icon {
       display: block;
       height: 32px;
@@ -76,10 +89,12 @@ button {
     .label {
       display: none;
       margin: 0;
+      color: $yellow;
       transition: all 0.3s ease;
     }
+
     &:hover {
-      color: $yellow;
+      // color: $yellow;
       // background-color: rgba($blue, 0.8);
       // transform: skewX(-5deg);
       .icon {
@@ -145,15 +160,9 @@ button {
   }
 }
 
-
-
-
-
 .about-me {
   color: $white;
 }
-
-
 
 .film-strip {
   height: 26.5rem;
