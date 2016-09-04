@@ -954,7 +954,8 @@ button {
       -ms-transform: rotate(2deg);
       /* IE 9 */
       -webkit-transform: rotate(2deg);
-      /* Safari */ }
+      /* Safari */
+      color: #05E6FF; }
     .photo .photo-backdrop:hover .tagline {
       -ms-transform: rotate(-2deg);
       /* IE 9 */
@@ -980,10 +981,10 @@ button {
 .video-holder {
   display: block;
   float: left;
-  width: 25%;
+  width: calc(100% / 3);
   margin: 0;
   padding: 0;
-  height: 150px; }
+  height: 350px; }
   .video-holder iframe {
     width: 100%;
     height: 100%;
@@ -1001,7 +1002,7 @@ button {
 .film-holder {
   display: block;
   float: left;
-  width: 50%;
+  width: calc(100% / 3);
   margin: 0;
   padding: 0;
   height: 350px; }
