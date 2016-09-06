@@ -83,6 +83,9 @@
           <iframe src='https://player.vimeo.com/video/161863324?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <div class="video-holder">
+          <iframe src='https://player.vimeo.com/video/161862930?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="video-holder">
           <iframe src='https://player.vimeo.com/video/161863715?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
@@ -549,6 +552,7 @@
 <script>
   $(document).ready(function() {
 
+    var commercialHit = false;
     var lastId,
         topMenu = $('.scroll-links'),
         topMenuHeight = $('.nav-bar').outerHeight(),
@@ -563,16 +567,19 @@
     $(window).on('scroll', function() {
        // Get container scroll position
        var fromTop = $(this).scrollTop() + topMenuHeight;
+       var fromBottom = $(this).scrollTop() + $(this).height();
+
+       console.log(fromBottom);
 
        // Get id of current scroll item
-       var cur = scrollItems.map(function(){
+       var topCur = scrollItems.map(function(){
          if ($(this).offset().top < fromTop)
            return this;
          })
 
       // Get the id of the current element
-      cur = cur[cur.length-1];
-      var id = cur && cur.length ? cur[0].id : "";
+      topCur = topCur[topCur.length-1];
+      var id = topCur && topCur.length ? topCur[0].id : "";
 
       if (lastId !== id) {
        lastId = id;
@@ -580,6 +587,13 @@
        menuItems.filter("[href!='#"+id+"']").removeClass('hovered');
        menuItems.filter("[href='#"+id+"']").addClass('hovered');
       }
+
+
+      if (id === 'commercial' && !commercialHit) {
+        alert('commercial hit!');
+        commercialHit = true;
+      }
+
     })
 
     $('.highlight').on('click', function() {
