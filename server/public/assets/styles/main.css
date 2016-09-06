@@ -906,20 +906,22 @@ button {
     cursor: pointer; }
     .nav-bar li.highlight p {
       display: block;
-      margin: 0;
-      border-bottom: 2px solid rgba(72, 73, 73, 0);
-      border-top: 2px solid rgba(72, 73, 73, 0); }
+      margin: 0; }
     .nav-bar li.highlight .icon {
       display: block;
       height: 32px;
       position: relative;
       top: 7px;
-      transition: all 0.3s ease; }
+      border-bottom: 2px solid rgba(72, 73, 73, 0);
+      border-top: 2px solid rgba(72, 73, 73, 0);
+      transition: all 0.5s ease; }
     .nav-bar li.highlight .label {
       display: none;
       margin: 0;
       color: #f9dd04;
-      transition: all 0.3s ease; }
+      border-bottom: 2px solid rgba(72, 73, 73, 0);
+      border-top: 2px solid rgba(72, 73, 73, 0);
+      transition: all 0.5s ease; }
     .nav-bar li.highlight.hovered .icon {
       display: none; }
     .nav-bar li.highlight.hovered .label {
@@ -929,8 +931,7 @@ button {
     .nav-bar li.highlight:hover .icon {
       display: none; }
     .nav-bar li.highlight:hover .label {
-      display: block;
-      opacity: 1; }
+      display: block; }
   .nav-bar li.contacts {
     display: block;
     float: right;
@@ -994,7 +995,7 @@ button {
   width: calc(100% / 3);
   margin: 0;
   padding: 0;
-  height: 350px; }
+  height: 256px; }
   .video-holder iframe {
     width: 100%;
     height: 100%;
@@ -1007,27 +1008,6 @@ button {
       /* Old WebKit */
       filter: grayscale(0); }
     .video-holder iframe .play:hover {
-      background-color: #05E6FF; }
-
-.film-holder {
-  display: block;
-  float: left;
-  width: calc(100% / 3);
-  margin: 0;
-  padding: 0;
-  height: 350px; }
-  .film-holder iframe {
-    width: 100%;
-    height: 100%;
-    -webkit-filter: grayscale(1);
-    /* Old WebKit */
-    filter: grayscale(1);
-    transition: all 0.2s ease; }
-    .film-holder iframe:hover {
-      -webkit-filter: grayscale(0);
-      /* Old WebKit */
-      filter: grayscale(0); }
-    .film-holder iframe .play:hover {
       background-color: #05E6FF; }
 
 @keyframes color-fade {
