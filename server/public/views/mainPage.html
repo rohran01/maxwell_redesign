@@ -82,9 +82,9 @@
         <div class="video-holder">
           <iframe src='https://player.vimeo.com/video/161863324?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        <div class="video-holder">
+        <!-- <div class="video-holder">
           <iframe src='https://player.vimeo.com/video/161862930?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
+        </div> -->
         <div class="video-holder">
           <iframe src='https://player.vimeo.com/video/161863715?color=F4F7F9' width="700" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
@@ -552,7 +552,13 @@
 <script>
   $(document).ready(function() {
 
-    var commercialHit = false;
+    var commercialActivated = false;
+    var filmActivated = false;
+    var commercialToLoad = $('#commercial').children('.work-holder').children();
+    var filmToLoad = $('#film').children('.work-holder').children();
+
+    console.log(commercialToLoad[0]);
+
     var lastId,
         topMenu = $('.scroll-links'),
         topMenuHeight = $('.nav-bar').outerHeight(),
@@ -567,9 +573,7 @@
     $(window).on('scroll', function() {
        // Get container scroll position
        var fromTop = $(this).scrollTop() + topMenuHeight;
-       var fromBottom = $(this).scrollTop() + $(this).height();
-
-       console.log(fromBottom);
+       var fromBottom = $(this).scrollTop() + $(this).height() - 100;
 
        // Get id of current scroll item
        var topCur = scrollItems.map(function(){
@@ -577,39 +581,65 @@
            return this;
          })
 
-      // Get the id of the current element
-      topCur = topCur[topCur.length-1];
-      var id = topCur && topCur.length ? topCur[0].id : "";
 
-      if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems.filter("[href!='#"+id+"']").removeClass('hovered');
-       menuItems.filter("[href='#"+id+"']").addClass('hovered');
+
+        // Get the id of the current element
+        topCur = topCur[topCur.length-1];
+        var id = topCur && topCur.length ? topCur[0].id : "";
+
+        if (lastId !== id) {
+         lastId = id;
+         // Set/remove active class
+         menuItems.filter("[href!='#"+id+"']").removeClass('hovered');
+         menuItems.filter("[href='#"+id+"']").addClass('hovered');
+        }
+
+        if (!commercialActivated && $('#commercial').offset().top < fromBottom) {
+          loadVideos(commercialToLoad);
+          commercialActivated = true;
+        }
+
+        if (!filmActivated && $('#film').offset().top < fromBottom) {
+          loadVideos(filmToLoad);
+          filmActivated = true;
+        }
+
+        if (commercialActivated && id == 'maxwell') {
+          $(commercialToLoad).fadeTo(0, 0);
+          commercialActivated = false;
+        }
+
+        if (filmActivated && id == 'commercial') {
+          $(filmToLoad).fadeTo(0, 0);
+          filmActivated = false;
+        }
+
+      })
+
+      function loadVideos(segment) {
+        console.log('LENGTH', segment.length);
+        for (var i = 0; i < segment.length; i++) {
+          console.log(segment[i]);
+          $(segment[i]).delay(80 * i).fadeTo(600, 1);
+
+          // .fadeTo('slow', 1).delay(0.5 * (i - 1));
+        }
       }
 
-
-      if (id === 'commercial' && !commercialHit) {
-        alert('commercial hit!');
-        commercialHit = true;
-      }
-
-    })
-
-    $('.highlight').on('click', function() {
-      var target = $(this.getAttribute('href'));
-      if ($(this).attr('href') === '#maxwell') {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: $('body').offset().top
-        }, 1000);
-      } else if ($(this).attr('href') !== '#maxwell' && target.length) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: (target.offset().top + 2)
-        }, 1000);
-      }
-    })
+      $('.highlight').on('click', function() {
+        var target = $(this.getAttribute('href'));
+        if ($(this).attr('href') === '#maxwell') {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: $('body').offset().top
+          }, 1000);
+        } else if ($(this).attr('href') !== '#maxwell' && target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: (target.offset().top + 2)
+          }, 1000);
+        }
+      })
 
 
 

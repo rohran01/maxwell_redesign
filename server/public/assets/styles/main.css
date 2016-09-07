@@ -934,8 +934,9 @@ button {
   .nav-bar li.contacts {
     display: block;
     float: right;
-    padding: 2rem 0;
-    margin: 0 1rem 0 0; }
+    padding: 2rem 1rem calc(2rem + 4px) 1rem;
+    margin: 0;
+    border-left: solid 1px #f4f7f9; }
     .nav-bar li.contacts a {
       margin: 0 1rem;
       cursor: pointer;
@@ -945,7 +946,7 @@ button {
         color: #f9dd04; }
 
 .photo {
-  margin-top: 73.33px;
+  margin-top: 76px;
   background-image: url("../images/splashPicBW.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -977,31 +978,21 @@ button {
 .about-me {
   color: #f4f7f9; }
 
-.film-strip {
-  height: 26.5rem;
-  background-color: #484949;
-  background-image: url("../images/filmStrip.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  margin: 0 auto;
-  padding-top: 7rem; }
-  .film-strip .section-heading {
-    text-align: center; }
-
 .video-holder {
   display: block;
   float: left;
   width: calc(100% / 3);
   margin: 0;
   padding: 0;
-  height: 350px; }
+  height: 350px;
+  opacity: 0; }
   .video-holder iframe {
     width: 100%;
     height: 100%;
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
-    transition: all 0.2s ease; }
+    transition: -webkit-filter 0.8s ease; }
     .video-holder iframe:hover {
       -webkit-filter: grayscale(0);
       /* Old WebKit */
@@ -1029,6 +1020,12 @@ button {
       filter: grayscale(0); }
     .film-holder iframe .play:hover {
       background-color: #05E6FF; }
+
+.commercial, .film {
+  padding-bottom: 0; }
+
+.photo, .commercial, .film {
+  box-shadow: 0px 36px 84px -16px rgba(244, 247, 249, 0.15); }
 
 @keyframes color-fade {
   0% {
