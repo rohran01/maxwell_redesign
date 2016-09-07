@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
-  var commercialActivated = false;
+  var fox9Activated = false;
+  var jasonShowActivated = false;
   var filmActivated = false;
-  var commercialToLoad = $('#commercial').children('.work-holder').children();
+  var fox9ToLoad = $('#fox9').children('.work-holder').children();
+  var jasonShowToLoad = $('#jasonShow').children('.work-holder').children();
   var filmToLoad = $('#film').children('.work-holder').children();
 
   var lastId,
@@ -17,6 +19,7 @@ $(document).ready(function() {
       });
 
   $(window).on('scroll', function() {
+
      // Get container scroll position
      var fromTop = $(this).scrollTop() + topMenuHeight;
      var fromBottom = $(this).scrollTop() + $(this).height() - 100;
@@ -25,13 +28,12 @@ $(document).ready(function() {
      var topCur = scrollItems.map(function(){
        if ($(this).offset().top < fromTop)
          return this;
-       })
-
-
+       });
 
       // Get the id of the current element
       topCur = topCur[topCur.length-1];
       var id = topCur && topCur.length ? topCur[0].id : "";
+      console.log(id);
 
       if (lastId !== id) {
        lastId = id;
@@ -40,9 +42,14 @@ $(document).ready(function() {
        menuItems.filter("[href='#"+id+"']").addClass('hovered');
       }
 
-      if (!commercialActivated && $('#commercial').offset().top < fromBottom) {
-        loadVideos(commercialToLoad);
-        commercialActivated = true;
+      if (!fox9Activated && $('#fox9').offset().top < fromBottom) {
+        loadVideos(fox9ToLoad);
+        fox9Activated = true;
+      }
+
+      if (!jasonShowActivated && $('#jasonShow').offset().top < fromBottom) {
+        loadVideos(jasonShowToLoad);
+        jasonShowActivated = true;
       }
 
       if (!filmActivated && $('#film').offset().top < fromBottom) {
@@ -50,13 +57,19 @@ $(document).ready(function() {
         filmActivated = true;
       }
 
-      if (commercialActivated && $(window).offset().top < fromTop) {
-        $(commercialToLoad).fadeTo(0, 0);
-        commercialActivated = false;
+      console.log($(window).scrollTop());
+      if (fox9Activated && $(window).scrollTop() < 200) {
+        $('#fox9').children('.work-holder').children().fadeTo(0, 0);
+        fox9Activated = false;
       }
 
-      if (filmActivated && id == 'commercial') {
-        $(filmToLoad).fadeTo(0, 0);
+      if (jasonShowActivated && id === 'fox9') {
+        $('#jasonShow').children('.work-holder').children().fadeTo(0, 0);
+        jasonShowActivated = false;
+      }
+
+      if (filmActivated && id === 'jasonShow') {
+        $('#film').children('.work-holder').children().fadeTo(0, 0);
         filmActivated = false;
       }
 
@@ -65,7 +78,6 @@ $(document).ready(function() {
     function loadVideos(segment) {
       console.log('LENGTH', segment.length);
       for (var i = 0; i < segment.length; i++) {
-        console.log(segment[i]);
         $(segment[i]).delay(80 * i).fadeTo(600, 1);
       }
     }

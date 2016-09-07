@@ -59,7 +59,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 12%;
+    width: 10.5%;
     text-align: center;
     padding: 2rem 0;
     color: $white;
@@ -170,19 +170,6 @@ button {
   color: $white;
 }
 
-// .film-strip {
-//   height: 26.5rem;
-//   background-color: $black;
-//   background-image: url('../images/filmStrip.png');
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   margin: 0 auto;
-//   padding-top: 7rem;
-//   .section-heading {
-//     text-align: center;
-//   }
-// }
-
 .video-holder {
   display: block;
   float: left;
@@ -200,10 +187,20 @@ button {
     &:hover {
       -webkit-filter: grayscale(0); /* Old WebKit */
       filter: grayscale(0);
-
     }
     .play:hover {
       background-color: $blue;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+    transition: -webkit-filter 0.8s ease;
+    &:hover {
+      -webkit-filter: grayscale(0); /* Old WebKit */
+      filter: grayscale(0);
     }
   }
 }
@@ -231,11 +228,11 @@ button {
   }
 }
 
-.commercial, .film {
+.fox9, .jasonShow, .film {
   padding-bottom: 0;
 }
 
-.photo, .commercial, .film {
+.photo, .commercial, .jasonShow, .film {
   box-shadow: 0px 36px 84px -16px rgba($white, 0.15);
 }
 
