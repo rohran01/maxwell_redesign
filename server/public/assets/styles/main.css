@@ -875,13 +875,13 @@ button {
   transition: all 0.3s ease; }
   button:hover {
     color: rgba(249, 221, 4, 0.8);
-    border: 1px solid rgba(5, 230, 255, 0.8); }
+    border: 1px solid rgba(4, 195, 216, 0.8); }
 
 .section {
   padding: 8rem 0 7rem; }
   .section .section-heading {
     color: #f4f7f9;
-    transition: all 0.2s ease; }
+    transition: all 0.4s ease; }
   .section:hover .section-heading {
     color: #F93959; }
 
@@ -924,8 +924,8 @@ button {
       display: none; }
     .nav-bar li.highlight.hovered .label {
       display: block;
-      border-bottom: 2px solid #05E6FF;
-      border-top: 2px solid #05E6FF; }
+      border-bottom: 2px solid #04c3d8;
+      border-top: 2px solid #04c3d8; }
     .nav-bar li.highlight:hover .icon {
       display: none; }
     .nav-bar li.highlight:hover .label {
@@ -966,7 +966,7 @@ button {
       /* IE 9 */
       -webkit-transform: rotate(2deg);
       /* Safari */
-      color: #05E6FF; }
+      color: #04c3d8; }
     .photo .photo-backdrop:hover .tagline {
       -ms-transform: rotate(-2deg);
       /* IE 9 */
@@ -998,7 +998,7 @@ button {
       /* Old WebKit */
       filter: grayscale(0); }
     .video-holder iframe .play:hover {
-      background-color: #05E6FF; }
+      background-color: #04c3d8; }
 
 .film-holder {
   display: block;
@@ -1019,7 +1019,7 @@ button {
       /* Old WebKit */
       filter: grayscale(0); }
     .film-holder iframe .play:hover {
-      background-color: #05E6FF; }
+      background-color: #04c3d8; }
 
 .commercial, .film {
   padding-bottom: 0; }
@@ -1035,7 +1035,7 @@ button {
   50% {
     color: #F93959; }
   75% {
-    color: #05E6FF; }
+    color: #04c3d8; }
   100% {
     color: #f4f7f9; } }
 
