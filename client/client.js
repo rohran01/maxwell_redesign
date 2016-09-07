@@ -50,7 +50,7 @@ $(document).ready(function() {
         filmActivated = true;
       }
 
-      if (commercialActivated && id == 'maxwell') {
+      if (commercialActivated && $(window).offset().top < fromTop) {
         $(commercialToLoad).fadeTo(0, 0);
         commercialActivated = false;
       }
