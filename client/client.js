@@ -3,6 +3,11 @@ $(document).ready(function() {
   var fox9Activated = false;
   var jasonShowActivated = false;
   var filmActivated = false;
+  var skillsShowing = false;
+  var skills1 = $('.skills').find('.slideRight');
+  var skills2 = $('.skills').find('.slideDown');
+  console.log(skills1);
+  console.log('2', skills2);
   var fox9ToLoad = $('#fox9').children('.work-holder').children();
   var jasonShowToLoad = $('#jasonShow').children('.work-holder').children();
   var filmToLoad = $('#film').children('.work-holder').children();
@@ -22,7 +27,7 @@ $(document).ready(function() {
 
      // Get container scroll position
      var fromTop = $(this).scrollTop() + topMenuHeight;
-     var fromBottom = $(this).scrollTop() + $(this).height() - 100;
+     var fromBottom = $(this).scrollTop() + $(this).height() - 200;
 
      // Get id of current scroll item
      var topCur = scrollItems.map(function() {
@@ -56,6 +61,11 @@ $(document).ready(function() {
         filmActivated = true;
       }
 
+      if (!skillsShowing && $('#skills').offset().top < fromBottom) {
+        showSkills();
+        skillsShowing = true;
+      }
+
       if (fox9Activated && $(window).scrollTop() < 200) {
         $('#fox9').children('.work-holder').children().fadeTo(0, 0);
         fox9Activated = false;
@@ -71,6 +81,12 @@ $(document).ready(function() {
         filmActivated = false;
       }
 
+      if (skillsShowing && id == 'aboutMe') {
+        $('.skills').find('.slideRight').css('left', '-80%');
+        $('.skills').find('.slideDown').css('top', '-100%');
+        skillsShowing = false;
+      }
+
     })
 
     function loadVideos(segment) {
@@ -79,17 +95,23 @@ $(document).ready(function() {
       }
     }
 
-    var showing = false;
-    var skills = $('.skills').find('.slide');
-    $('.test-button').on('click', function() {
-      var leftMovement = showing == true ? '-80%' : 0;
-      for (var i = 0; i < skills.length; i++) {
-        $(skills[i]).delay(400 * (i - 0.5 * i)).animate({
-          left: leftMovement
+    function showSkills() {
+      var rightMovement = skillsShowing == true ? '-80%' : 0;
+      var downMovement = skillsShowing == true ? '-620px' : 0
+      for (var i = 0; i < skills1.length; i++) {
+        $(skills1[i]).delay(400 * (i - 0.5 * i)).animate({
+          left: rightMovement
         }, 1200, 'easeOutBounce')
       }
-      showing = showing == true ? false : true;
-    })
+      for (var i = skills2.length; i > 0; i--) {
+        $(skills2[i - 1]).delay(600 + 180 * (skills2.length - 1 - i)).animate({
+          top: downMovement
+        }, 800, 'easeOutBounce')
+      }
+      $('.skills-title').delay(1600).animate({
+        top: downMovement
+      }, 800, 'easeOutBounce')
+    }
 
     $('.highlight').on('click', function() {
       var target = $(this.getAttribute('href'));
