@@ -17,6 +17,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
+    "jquery-easing": "0.0.1",
     "nodemon": "^1.10.2",
     "path": "^0.12.7"
   }

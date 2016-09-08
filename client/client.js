@@ -74,18 +74,20 @@ $(document).ready(function() {
     })
 
     function loadVideos(segment) {
-      console.log('LENGTH', segment.length);
       for (var i = 0; i < segment.length; i++) {
         $(segment[i]).delay(80 * i).fadeTo(600, 1);
       }
     }
 
     var showing = false;
+    var skills = $('.skills').find('.slide');
     $('.test-button').on('click', function() {
-      var leftMovement = showing == true ? '-80%' : -2;
-      $('.slider').animate({
-        left: leftMovement
-      }, 1800);
+      var leftMovement = showing == true ? '-80%' : 0;
+      for (var i = 0; i < skills.length; i++) {
+        $(skills[i]).delay(400 * (i - 0.5 * i)).animate({
+          left: leftMovement
+        }, 1200, 'easeOutBounce')
+      }
       showing = showing == true ? false : true;
     })
 

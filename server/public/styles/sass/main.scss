@@ -125,8 +125,12 @@ button {
 .photo {
   margin-top: 78px;
   padding: 0;
+  position: relative;
   img {
     width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
   }
   .photo-backdrop {
     position: absolute;
@@ -136,6 +140,7 @@ button {
     background-color: rgba($black, 0.6);
     padding: 10rem 0 10rem 8%;
     transition: all 0.3s ease;
+    display: block;
     .headline {
       font-size: 11rem;
     }
@@ -212,35 +217,40 @@ button {
 }
 
 .skills-container {
-  position: relative;
   overflow: hidden;
   height: 600px;
-  border: 1px solid $white;
-  .slider {
+  .skills-title{
     position: absolute;
-    width: 100%;
+    top: 0;
+    left: calc(100% - 6rem);
+    h2 {
+      color: $white;
+      width: 2rem;
+      word-wrap: break-word;
+    }
+  }
+  .slide {
+    position: relative;
+    top: 0;
     left: -80%;
-    .slide {
-      border: 1px solid $white;
-      background: linear-gradient(to bottom right, $blue, $red);
-      margin: 2rem 0;
-      height: 6rem;
-      color: $black;
-      &.five {
-        width: 75%;
-      }
-      &.four {
-        width: 60%;
-      }
-      &.three {
-        width: 45%;
-      }
-      &.two {
-        width: 30%;
-      }
-      &.one {
-        width: 15%;
-      }
+    background: linear-gradient(to bottom right, $blue, $red);
+    margin: 2rem 0;
+    color: $white;
+    padding: 1rem 2rem;
+    &.five {
+      width: 75%;
+    }
+    &.four {
+      width: 60%;
+    }
+    &.three {
+      width: 45%;
+    }
+    &.two {
+      width: 30%;
+    }
+    &.one {
+      width: 15%;
     }
   }
 }

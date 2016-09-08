@@ -368,7 +368,7 @@ th {
 * 12/29/2014
 */
 /* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô
 - Grid
 - Base Styles
 - Typography
@@ -384,7 +384,7 @@ th {
 - Media Queries
 */
 /* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .container {
   position: relative;
   width: 100%;
@@ -521,7 +521,7 @@ th {
   .offset-by-one-half.columns {
     margin-left: 52%; } }
 /* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
@@ -537,7 +537,7 @@ body {
   color: #222; }
 
 /* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -598,7 +598,7 @@ p {
   letter-spacing: 1px; }
 
 /* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 a {
   color: #1EAEDB; }
 
@@ -606,7 +606,7 @@ a:hover {
   color: #0FA0CE; }
 
 /* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .button,
 button,
 input[type="submit"],
@@ -668,7 +668,7 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB; }
 
 /* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -737,7 +737,7 @@ label > .label-body {
   font-weight: normal; }
 
 /* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 ul {
   list-style: circle inside; }
 
@@ -760,7 +760,7 @@ li {
   font-size: 2rem; }
 
 /* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -776,7 +776,7 @@ pre > code {
   white-space: pre; }
 
 /* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 th,
 td {
   padding: 12px 15px;
@@ -792,7 +792,7 @@ td:last-child {
   padding-right: 0; }
 
 /* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 button,
 .button {
   margin-bottom: 1rem; }
@@ -815,7 +815,7 @@ form {
   margin-bottom: 2.5rem; }
 
 /* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -831,7 +831,7 @@ form {
   float: left; }
 
 /* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -839,7 +839,7 @@ hr {
   border-top: 1px solid #E1E1E1; }
 
 /* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
@@ -849,7 +849,7 @@ hr {
   clear: both; }
 
 /* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇôΓÇô */
 /*
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
@@ -947,9 +947,13 @@ button {
 
 .photo {
   margin-top: 78px;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
   .photo img {
-    width: 100%; }
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative; }
   .photo .photo-backdrop {
     position: absolute;
     top: 50%;
@@ -957,7 +961,8 @@ button {
     transform: translate(-50%, -50%);
     background-color: rgba(72, 73, 73, 0.6);
     padding: 10rem 0 10rem 8%;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    display: block; }
     .photo .photo-backdrop .headline {
       font-size: 11rem; }
     .photo .photo-backdrop .headline, .photo .photo-backdrop .tagline {
@@ -1024,30 +1029,34 @@ button {
   box-shadow: 0px 36px 84px -16px rgba(244, 247, 249, 0.15); }
 
 .skills-container {
-  position: relative;
   overflow: hidden;
-  height: 600px;
-  border: 1px solid #f4f7f9; }
-  .skills-container .slider {
+  height: 600px; }
+  .skills-container .skills-title {
     position: absolute;
-    width: 100%;
-    left: -80%; }
-    .skills-container .slider .slide {
-      border: 1px solid #f4f7f9;
-      background: linear-gradient(to bottom right, #04c3d8, #F93959);
-      margin: 2rem 0;
-      height: 6rem;
-      color: #484949; }
-      .skills-container .slider .slide.five {
-        width: 75%; }
-      .skills-container .slider .slide.four {
-        width: 60%; }
-      .skills-container .slider .slide.three {
-        width: 45%; }
-      .skills-container .slider .slide.two {
-        width: 30%; }
-      .skills-container .slider .slide.one {
-        width: 15%; }
+    top: 0;
+    left: calc(100% - 6rem); }
+    .skills-container .skills-title h2 {
+      color: #f4f7f9;
+      width: 2rem;
+      word-wrap: break-word; }
+  .skills-container .slide {
+    position: relative;
+    top: 0;
+    left: -80%;
+    background: linear-gradient(to bottom right, #04c3d8, #F93959);
+    margin: 2rem 0;
+    color: #f4f7f9;
+    padding: 1rem 2rem; }
+    .skills-container .slide.five {
+      width: 75%; }
+    .skills-container .slide.four {
+      width: 60%; }
+    .skills-container .slide.three {
+      width: 45%; }
+    .skills-container .slide.two {
+      width: 30%; }
+    .skills-container .slide.one {
+      width: 15%; }
 
 @keyframes color-fade {
   0% {

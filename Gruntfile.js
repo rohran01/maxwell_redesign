@@ -23,7 +23,9 @@ module.exports = function(grunt) {
                 cwd: "node_modules/",
                 src: [
                     "jquery/dist/jquery.min.js",
-                    "jquery/dist/jquery/min.map"
+                    "jquery/dist/jquery/min.map",
+                    "jquery-easing/dist/jquery.easing.1.3.umd.min.js",
+                    "jquery-easing/dist/jquery.easing.1.3.umd.min.js.map"
                 ],
                 "dest": "server/public/vendor/"
             }
@@ -44,6 +46,6 @@ module.exports = function(grunt) {
 
 
     // Default task(s).
-    grunt.registerTask('default', ['copy', 'uglify']);
+    grunt.registerTask('default', ['copy', 'sass', 'uglify']);
 
 };
