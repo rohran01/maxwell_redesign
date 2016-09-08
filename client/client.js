@@ -25,7 +25,7 @@ $(document).ready(function() {
      var fromBottom = $(this).scrollTop() + $(this).height() - 100;
 
      // Get id of current scroll item
-     var topCur = scrollItems.map(function(){
+     var topCur = scrollItems.map(function() {
        if ($(this).offset().top < fromTop)
          return this;
        });
@@ -33,7 +33,6 @@ $(document).ready(function() {
       // Get the id of the current element
       topCur = topCur[topCur.length-1];
       var id = topCur && topCur.length ? topCur[0].id : "";
-      console.log(id);
 
       if (lastId !== id) {
        lastId = id;
@@ -57,7 +56,6 @@ $(document).ready(function() {
         filmActivated = true;
       }
 
-      console.log($(window).scrollTop());
       if (fox9Activated && $(window).scrollTop() < 200) {
         $('#fox9').children('.work-holder').children().fadeTo(0, 0);
         fox9Activated = false;
@@ -81,6 +79,15 @@ $(document).ready(function() {
         $(segment[i]).delay(80 * i).fadeTo(600, 1);
       }
     }
+
+    var showing = false;
+    $('.test-button').on('click', function() {
+      var leftMovement = showing == true ? '-80%' : -2;
+      $('.slider').animate({
+        left: leftMovement
+      }, 1800);
+      showing = showing == true ? false : true;
+    })
 
     $('.highlight').on('click', function() {
       var target = $(this.getAttribute('href'));

@@ -211,9 +211,39 @@ button {
   box-shadow: 0px 36px 84px -16px rgba($white, 0.15);
 }
 
-// .photo {
-//   box-shadow: 0px 36px 84px -16px rgba($white, 0.15);
-// }
+.skills-container {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  border: 1px solid $white;
+  .slider {
+    position: absolute;
+    width: 100%;
+    left: -80%;
+    .slide {
+      border: 1px solid $white;
+      background: linear-gradient(to bottom right, $blue, $red);
+      margin: 2rem 0;
+      height: 6rem;
+      color: $black;
+      &.five {
+        width: 75%;
+      }
+      &.four {
+        width: 60%;
+      }
+      &.three {
+        width: 45%;
+      }
+      &.two {
+        width: 30%;
+      }
+      &.one {
+        width: 15%;
+      }
+    }
+  }
+}
 
 @keyframes color-fade {
   0% {

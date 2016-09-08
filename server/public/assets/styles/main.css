@@ -1023,6 +1023,32 @@ button {
   padding-bottom: 0;
   box-shadow: 0px 36px 84px -16px rgba(244, 247, 249, 0.15); }
 
+.skills-container {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  border: 1px solid #f4f7f9; }
+  .skills-container .slider {
+    position: absolute;
+    width: 100%;
+    left: -80%; }
+    .skills-container .slider .slide {
+      border: 1px solid #f4f7f9;
+      background: linear-gradient(to bottom right, #04c3d8, #F93959);
+      margin: 2rem 0;
+      height: 6rem;
+      color: #484949; }
+      .skills-container .slider .slide.five {
+        width: 75%; }
+      .skills-container .slider .slide.four {
+        width: 60%; }
+      .skills-container .slider .slide.three {
+        width: 45%; }
+      .skills-container .slider .slide.two {
+        width: 30%; }
+      .skills-container .slider .slide.one {
+        width: 15%; }
+
 @keyframes color-fade {
   0% {
     color: #f4f7f9; }
