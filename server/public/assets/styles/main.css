@@ -993,10 +993,26 @@ button {
     /* Old WebKit */
     filter: grayscale(1);
     transition: all 0.8s ease; }
+  .about-me .chewie {
+    width: 15rem;
+    margin: 1rem 2rem 0 0;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    border: 5px solid #484949;
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.8s ease; }
   .about-me:hover .section-heading {
     color: #F93959; }
   .about-me:hover .portrait {
     border: 5px solid #04c3d8;
+    -webkit-filter: grayscale(0);
+    /* Old WebKit */
+    filter: grayscale(0); }
+  .about-me:hover .chewie {
+    border: 5px solid #f9dd04;
     -webkit-filter: grayscale(0);
     /* Old WebKit */
     filter: grayscale(0); }

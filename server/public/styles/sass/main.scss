@@ -175,18 +175,30 @@ button {
     filter: grayscale(1);
     transition: all 0.8s ease;
   }
+  .chewie {
+    width: 15rem;
+    margin: 1rem 2rem 0 0;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    border: 5px solid $black;
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.8s ease;
+  }
   &:hover {
     .section-heading {
       color: $red;
     }
     .portrait {
-
-
-    // &:hover {
       border: 5px solid $blue;
       -webkit-filter: grayscale(0); /* Old WebKit */
       filter: grayscale(0);
-    // }
+    }
+    .chewie {
+      border: 5px solid $yellow;
+      -webkit-filter: grayscale(0); /* Old WebKit */
+      filter: grayscale(0);
     }
   }
 }
