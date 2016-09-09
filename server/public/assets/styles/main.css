@@ -879,11 +879,6 @@ button {
 
 .section {
   padding: 8rem 0 7rem; }
-  .section .section-heading {
-    color: #f4f7f9;
-    transition: all 0.4s ease; }
-  .section:hover .section-heading {
-    color: #F93959; }
 
 .nav-bar {
   z-index: 1000;
@@ -985,6 +980,26 @@ button {
 
 .about-me {
   color: #f4f7f9; }
+  .about-me .section-heading {
+    color: #f4f7f9;
+    transition: all 0.4s ease; }
+  .about-me .portrait {
+    width: 25rem;
+    height: auto;
+    float: right;
+    border-radius: 50%;
+    border: 5px solid #484949;
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.8s ease; }
+  .about-me:hover .section-heading {
+    color: #F93959; }
+  .about-me:hover .portrait {
+    border: 5px solid #04c3d8;
+    -webkit-filter: grayscale(0);
+    /* Old WebKit */
+    filter: grayscale(0); }
 
 .video-holder {
   display: block;

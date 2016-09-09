@@ -31,15 +31,7 @@ button {
 
 .section {
   padding: 8rem 0 7rem;
-  .section-heading {
-    color: $white;
-    transition: all 0.4s ease;
-  }
-  &:hover {
-    .section-heading {
-      color: $red;
-    }
-  }
+
 }
 
 //NAV BAR//
@@ -169,6 +161,34 @@ button {
 
 .about-me {
   color: $white;
+  .section-heading {
+    color: $white;
+    transition: all 0.4s ease;
+  }
+  .portrait {
+    width: 25rem;
+    height: auto;
+    float: right;
+    border-radius: 50%;
+    border: 5px solid $black;
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.8s ease;
+  }
+  &:hover {
+    .section-heading {
+      color: $red;
+    }
+    .portrait {
+
+
+    // &:hover {
+      border: 5px solid $blue;
+      -webkit-filter: grayscale(0); /* Old WebKit */
+      filter: grayscale(0);
+    // }
+    }
+  }
 }
 
 .video-holder {
@@ -218,11 +238,6 @@ button {
 
 .skills-container {
   overflow: hidden;
-  // height: 600px;
-  // &.rotate {
-  //   transform: rotate(90deg);
-  //   margin-right: 70px;
-  // }
   &.down {
     height: 600px;
   }

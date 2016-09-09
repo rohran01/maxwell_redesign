@@ -79,14 +79,13 @@ $(document).ready(function() {
         filmActivated = false;
       }
 
-      if (skillsShowing && id == 'aboutMe') {
+      if (skillsShowing && id === 'aboutMe') {
         $('.skills').find('.slideRight').css('left', '-80%');
         $('.skills').find('.slideDown').css('top', '-620px');
-        $('skills-title').css('top', '-620px');
+        $('.skills-title').css('top', '-620px');
         skillsShowing = false;
       }
-
-    })
+    });
 
     function loadVideos(segment) {
       for (var i = 0; i < segment.length; i++) {
@@ -95,17 +94,17 @@ $(document).ready(function() {
     }
 
     function showSkills() {
-      var rightMovement = skillsShowing == true ? '-80%' : 0;
-      var downMovement = skillsShowing == true ? '-620px' : 0
+      var rightMovement = skillsShowing === true ? '-80%' : 0;
+      var downMovement = skillsShowing === true ? '-620px' : 0;
       for (var i = 0; i < skills1.length; i++) {
         $(skills1[i]).delay(600 * i - (60 * i * i)).animate({
           left: rightMovement
         }, 1200, 'easeOutBack');
       }
-      for (var i = 0; i < skills2.length; i++) {
-        $(skills2[skills2.length - 1 - i]).delay(200 + 200 * i - (10 * i * i)).animate({
+      for (var j = 0; j < skills2.length; j++) {
+        $(skills2[skills2.length - 1 - j]).delay(200 + 200 * j - (10 * j * j)).animate({
           top: downMovement
-        }, 800, 'easeOutBack')
+        }, 800, 'easeOutBack');
       }
       $('.skills-title').delay(800).animate({
         top: downMovement
@@ -125,5 +124,5 @@ $(document).ready(function() {
           scrollTop: (target.offset().top + 2)
         }, 1000);
       }
-    })
-})
+    });
+});
