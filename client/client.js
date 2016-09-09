@@ -6,8 +6,6 @@ $(document).ready(function() {
   var skillsShowing = false;
   var skills1 = $('.skills').find('.slideRight');
   var skills2 = $('.skills').find('.slideDown');
-  console.log(skills1);
-  console.log('2', skills2);
   var fox9ToLoad = $('#fox9').children('.work-holder').children();
   var jasonShowToLoad = $('#jasonShow').children('.work-holder').children();
   var filmToLoad = $('#film').children('.work-holder').children();
@@ -92,7 +90,7 @@ $(document).ready(function() {
 
     function loadVideos(segment) {
       for (var i = 0; i < segment.length; i++) {
-        $(segment[i]).delay(80 * i).fadeTo(600, 1);
+        $(segment[i]).delay(100 * i).fadeTo(600, 1);
       }
     }
 
@@ -100,18 +98,18 @@ $(document).ready(function() {
       var rightMovement = skillsShowing == true ? '-80%' : 0;
       var downMovement = skillsShowing == true ? '-620px' : 0
       for (var i = 0; i < skills1.length; i++) {
-        $(skills1[i]).delay(400 * (i - 0.5 * i)).animate({
+        $(skills1[i]).delay(600 * i - (60 * i * i)).animate({
           left: rightMovement
-        }, 1200, 'easeOutBounce')
+        }, 1200, 'easeOutBack');
       }
-      for (var i = skills2.length; i > 0; i--) {
-        $(skills2[i - 1]).delay(600 + 180 * (skills2.length - 1 - i)).animate({
+      for (var i = 0; i < skills2.length; i++) {
+        $(skills2[skills2.length - 1 - i]).delay(200 + 200 * i - (10 * i * i)).animate({
           top: downMovement
-        }, 800, 'easeOutBounce')
+        }, 800, 'easeOutBack')
       }
-      $('.skills-title').delay(1600).animate({
+      $('.skills-title').delay(800).animate({
         top: downMovement
-      }, 800, 'easeOutBounce')
+      }, 800, 'easeOutBack');
     }
 
     $('.highlight').on('click', function() {
