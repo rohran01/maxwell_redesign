@@ -921,6 +921,8 @@ button {
       display: block;
       border-bottom: 2px solid #04c3d8;
       border-top: 2px solid #04c3d8; }
+    .nav-bar li.highlight:active .label {
+      transform: rotate(10deg); }
     .nav-bar li.highlight:hover .icon {
       display: none; }
     .nav-bar li.highlight:hover .label {
@@ -948,7 +950,15 @@ button {
     width: 100%;
     height: auto;
     display: block;
-    position: relative; }
+    position: relative;
+    -webkit-filter: grayscale(1);
+    /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.3s ease; }
+    .photo img:hover {
+      -webkit-filter: grayscale(0);
+      /* Old WebKit */
+      filter: grayscale(0); }
   .photo .photo-backdrop {
     position: absolute;
     top: 50%;
@@ -992,6 +1002,7 @@ button {
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
+    opacity: 0;
     transition: all 0.8s ease; }
   .about-me .chewie {
     width: 15rem;
@@ -1003,6 +1014,8 @@ button {
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
+    opacity: 0;
+    transform: rotateY(0);
     transition: all 0.8s ease; }
   .about-me:hover .section-heading {
     color: #F93959; }
@@ -1119,16 +1132,10 @@ button {
       margin: 20px 0 0 -30px;
       width: 70px; }
 
-@keyframes color-fade {
+@keyframes coinflip {
   0% {
-    color: #f4f7f9; }
-  25% {
-    color: #f9dd04; }
-  50% {
-    color: #F93959; }
-  75% {
-    color: #04c3d8; }
+    transform: rotateY(0deg); }
   100% {
-    color: #f4f7f9; } }
+    transform: rotateY(360deg); } }
 
 /*# sourceMappingURL=main.css.map */

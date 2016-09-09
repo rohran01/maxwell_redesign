@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  var picturesFlipped = false;
   var fox9Activated = false;
   var jasonShowActivated = false;
   var filmActivated = false;
@@ -44,6 +45,13 @@ $(document).ready(function() {
        menuItems.filter("[href='#"+id+"']").addClass('hovered');
       }
 
+      if (!picturesFlipped && id === 'aboutMe')
+      {
+        $('.portrait, .chewie').fadeTo(400, 1);
+        $('.portrait').css('animation', 'coinflip 0.5s');
+        $('.chewie').css('animation', 'coinflip 0.5s 0.25s')
+        picturesFlipped = true;
+      }
       if (!fox9Activated && $('#fox9').offset().top < fromBottom) {
         loadVideos(fox9ToLoad);
         fox9Activated = true;
@@ -62,6 +70,12 @@ $(document).ready(function() {
       if (!skillsShowing && $('#skills').offset().top < fromBottom) {
         showSkills();
         skillsShowing = true;
+      }
+
+      if (picturesFlipped && $(window).scrollTop() < 200) {
+        console.log('picturesFlipped reset');
+        $('.portrait, .chewie').css('animation', 'none');
+        picturesFlipped = false;
       }
 
       if (fox9Activated && $(window).scrollTop() < 200) {

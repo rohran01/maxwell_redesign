@@ -85,6 +85,11 @@ button {
         border-top: 2px solid $blue;
       }
     }
+    &:active {
+      .label {
+        transform: rotate(10deg);
+      }
+    }
     &:hover {
       .icon {
         display: none;
@@ -123,6 +128,13 @@ button {
     height: auto;
     display: block;
     position: relative;
+    -webkit-filter: grayscale(1); /* Old WebKit */
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+    &:hover {
+      -webkit-filter: grayscale(0); /* Old WebKit */
+      filter: grayscale(0);
+    }
   }
   .photo-backdrop {
     position: absolute;
@@ -173,6 +185,7 @@ button {
     border: 5px solid $black;
     -webkit-filter: grayscale(1); /* Old WebKit */
     filter: grayscale(1);
+    opacity: 0;
     transition: all 0.8s ease;
   }
   .chewie {
@@ -184,7 +197,11 @@ button {
     border: 5px solid $black;
     -webkit-filter: grayscale(1); /* Old WebKit */
     filter: grayscale(1);
+    opacity: 0;
+    transform: rotateY(0);
     transition: all 0.8s ease;
+    &:hover {
+    }
   }
   &:hover {
     .section-heading {
@@ -194,11 +211,13 @@ button {
       border: 5px solid $blue;
       -webkit-filter: grayscale(0); /* Old WebKit */
       filter: grayscale(0);
+      // animation: coinflip 0.5s;
     }
     .chewie {
       border: 5px solid $yellow;
       -webkit-filter: grayscale(0); /* Old WebKit */
       filter: grayscale(0);
+      // animation: coinflip 0.5s 0.25s;
     }
   }
 }
@@ -327,20 +346,11 @@ button {
   }
 }
 
-@keyframes color-fade {
+@keyframes coinflip {
   0% {
-    color: $white;
-  }
-  25% {
-    color: $yellow;
-  }
-  50% {
-    color: $red;
-  }
-  75% {
-    color: $blue;
+    transform: rotateY(0deg);
   }
   100% {
-    color: $white;
+    transform: rotateY(360deg);
   }
 }
