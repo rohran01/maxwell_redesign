@@ -889,7 +889,8 @@ button {
   position: fixed;
   border: 1px solid #f4f7f9;
   width: calc(100% - 2px);
-  background-color: rgba(72, 73, 73, 0.9); }
+  padding-left: 0.5rem;
+  background-color: rgba(72, 73, 73, 0.8); }
   .nav-bar ul {
     list-style-type: none; }
   .nav-bar .name:hover {
@@ -1162,7 +1163,17 @@ button {
     float: left;
     text-align: center; }
     .undone .undone-filming iframe {
-      width: 100%; }
+      width: 100%;
+      -webkit-filter: grayscale(1);
+      /* Old WebKit */
+      filter: grayscale(1);
+      transition: -webkit-filter 0.8s ease; }
+      .undone .undone-filming iframe:hover {
+        -webkit-filter: grayscale(0);
+        /* Old WebKit */
+        filter: grayscale(0); }
+      .undone .undone-filming iframe .play:hover {
+        background-color: #04c3d8; }
     .undone .undone-filming .filming-caption {
       font-size: 2rem; }
   .undone .box-title {
