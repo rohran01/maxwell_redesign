@@ -5,6 +5,7 @@ $(document).ready(function() {
   var jasonShowActivated = false;
   var filmActivated = false;
   var skillsShowing = false;
+  var rotationCounter = 0;
   var skills1 = $('.skills').find('.slideRight');
   var skills2 = $('.skills').find('.slideDown');
   var fox9ToLoad = $('#fox9').children('.work-holder').children();
@@ -124,6 +125,41 @@ $(document).ready(function() {
         top: downMovement
       }, 800, 'easeOutBack');
     }
+
+    $('.up').on('click', function() {
+      console.log('up clicked');
+      rotationCounter += 90;
+      $('.cube').css('transform', 'translateZ(-250px) rotateX(' + rotationCounter + 'deg)');
+      // switch(rotationCounter) {
+      //   case 1:
+      //     $('.cube').css('transform', 'translateZ(-250px) rotateX(90deg)');
+      //     rotationCounter++;
+      //     break;
+      //   case 2:
+      //     $('.cube').css('transform', 'translateZ(-250px) rotateX(180deg)');
+      //     rotationCounter++;
+      //     break;
+      //   case 3:
+      //     $('.cube').css('transform', 'translateZ(-250px) rotateX(270deg)');
+      //     rotationCounter++;
+      //     break;
+      //   case 4:
+      //     $('.cube').css('transform', 'translateZ(-250px) rotateX(360deg)');
+      //     rotationCounter = 1;
+      //     break;
+        // case 5:
+        //   $('.cube').css('transform', 'translateZ(-200px) rotateX(0deg)');
+        //   rotationCounter = 1;
+        //   break;
+      // }
+
+    });
+
+    $('.down').on('click', function() {
+      console.log('down clicked');
+      rotationCounter -= 90;
+      $('.cube').css('transform', 'translateZ(-250px) rotateX(' + rotationCounter + 'deg)');
+    });
 
     $('.highlight').on('click', function() {
       var target = $(this.getAttribute('href'));
