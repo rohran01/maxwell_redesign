@@ -1153,21 +1153,26 @@ button {
     height: auto;
     margin: 1rem;
     float: right; }
+  .undone p {
+    margin: 0; }
   .undone .undone-filming {
-    width: 40rem;
+    width: 100%;
     height: auto;
     margin: 0;
     float: left;
     text-align: center; }
-    .undone .undone-filming img {
+    .undone .undone-filming iframe {
       width: 100%; }
     .undone .undone-filming .filming-caption {
-      font-size: 1.25rem; }
+      font-size: 2rem; }
+  .undone .box-title {
+    margin-top: 5rem;
+    text-align: center; }
 
 .video-scene {
   width: 100%;
   height: 500px;
-  margin: 125px auto 0;
+  margin: 0;
   perspective: 2000px; }
   .video-scene .cube {
     position: relative;
