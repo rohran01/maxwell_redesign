@@ -879,10 +879,13 @@ button {
 
 .section {
   padding: 8rem 0 7rem; }
-
-.copyright {
-  vertical-align: top;
-  font-size: 1rem; }
+  .section .section-heading {
+    fill: #f4f7f9;
+    width: 60%;
+    height: 10rem;
+    display: block;
+    margin-bottom: 5rem;
+    transition: all 0.4s ease; }
 
 .nav-bar {
   z-index: 1000;
@@ -899,7 +902,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 11%;
+    width: 12.5%;
     text-align: center;
     padding: 2rem 0;
     color: #f4f7f9;
@@ -973,34 +976,33 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(72, 73, 73, 0.6);
-    padding: 10rem 0 10rem 8%;
+    padding: 10rem 0 10rem 4%;
     transition: all 0.3s ease;
     display: block; }
     .photo .photo-backdrop .headline {
-      font-size: 11rem; }
+      width: 90%; }
+    .photo .photo-backdrop .tagline {
+      width: 50%; }
     .photo .photo-backdrop .headline, .photo .photo-backdrop .tagline {
       transform: rotate(0);
-      color: #f4f7f9;
+      fill: #f4f7f9;
       transition: all 0.2s ease; }
     .photo .photo-backdrop:hover .headline {
       -ms-transform: rotate(2deg);
       /* IE 9 */
       -webkit-transform: rotate(2deg);
       /* Safari */
-      color: #04c3d8; }
+      fill: #04c3d8; }
     .photo .photo-backdrop:hover .tagline {
       -ms-transform: rotate(-2deg);
       /* IE 9 */
       -webkit-transform: rotate(-2deg);
       /* Safari */
       transform: rotate(-2deg);
-      color: #f9dd04; }
+      fill: #f9dd04; }
 
 .about-me {
   color: #f4f7f9; }
-  .about-me .section-heading {
-    color: #f4f7f9;
-    transition: all 0.4s ease; }
   .about-me .portrait {
     width: 25rem;
     height: auto;
@@ -1026,7 +1028,7 @@ button {
     transform: rotateY(0);
     transition: all 0.8s ease; }
   .about-me:hover .section-heading {
-    color: #F93959; }
+    fill: #F93959; }
   .about-me:hover .portrait {
     border: 5px solid #04c3d8;
     -webkit-filter: grayscale(0);
@@ -1142,13 +1144,8 @@ button {
 
 .undone {
   color: #f4f7f9; }
-  .undone .copyright {
-    font-size: 5rem; }
-  .undone .section-heading {
-    color: #f4f7f9;
-    transition: all 0.4s ease; }
   .undone:hover .section-heading {
-    color: #F93959; }
+    fill: #F93959; }
   .undone .undone-winner {
     width: 25rem;
     height: auto;

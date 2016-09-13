@@ -27,10 +27,14 @@ button {
 }
 .section {
   padding: 8rem 0 7rem;
-}
-.copyright {
-  vertical-align: top;
-  font-size: 1rem;
+  .section-heading {
+    fill: $white;
+    width: 60%;
+    height: 10rem;
+    display: block;
+    margin-bottom: 5rem;
+    transition: all 0.4s ease;
+  }
 }
 
 //NAV BAR//
@@ -51,7 +55,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 11%;
+    width: 12.5%;
     text-align: center;
     padding: 2rem 0;
     color: $white;
@@ -151,41 +155,38 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba($black, 0.6);
-    padding: 10rem 0 10rem 8%;
+    padding: 10rem 0 10rem 4%;
     transition: all 0.3s ease;
     display: block;
     .headline {
-      font-size: 11rem;
+      width: 90%;
+    }
+    .tagline {
+      width: 50%;
     }
     .headline, .tagline {
       transform: rotate(0);
-      color: $white;
+      fill: $white;
       transition: all 0.2s ease;
     }
     &:hover {
       .headline {
         -ms-transform: rotate(2deg); /* IE 9 */
         -webkit-transform: rotate(2deg); /* Safari */
-        color: $blue;
+        fill: $blue;
       }
       .tagline {
         -ms-transform: rotate(-2deg); /* IE 9 */
         -webkit-transform: rotate(-2deg); /* Safari */
         transform: rotate(-2deg);
-        color: $yellow;
+        fill: $yellow;
       }
     }
   }
 }
 
-
-
 .about-me {
   color: $white;
-  .section-heading {
-    color: $white;
-    transition: all 0.4s ease;
-  }
   .portrait {
     width: 25rem;
     height: auto;
@@ -214,7 +215,7 @@ button {
   }
   &:hover {
     .section-heading {
-      color: $red;
+      fill: $red;
     }
     .portrait {
       border: 5px solid $blue;
@@ -357,16 +358,9 @@ button {
 
 .undone {
   color: $white;
-  .copyright {
-    font-size: 5rem;
-  }
-  .section-heading {
-    color: $white;
-    transition: all 0.4s ease;
-  }
   &:hover {
     .section-heading {
-      color: $red;
+      fill: $red;
     }
   }
   .undone-winner {
