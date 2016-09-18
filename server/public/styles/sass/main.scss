@@ -232,6 +232,18 @@ button {
   }
 }
 
+.video-bank-title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 3rem 0;
+  margin: 3rem auto 0 auto;
+  color: $white;
+  .section-heading {
+    margin: 0 auto 1rem auto;
+  }
+
+}
+
 .video-holder {
   display: block;
   float: left;
