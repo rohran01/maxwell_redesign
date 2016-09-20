@@ -29,11 +29,15 @@ button {
   padding: 8rem 0 7rem;
   .section-heading {
     fill: $white;
-    width: 60%;
-    height: 10rem;
+    height: 9rem;
     display: block;
     margin-bottom: 5rem;
     transition: all 0.4s ease;
+  }
+  &:hover {
+    .section-heading {
+      fill: $red;
+    }
   }
 }
 
