@@ -1,33 +1,13 @@
 $(document).ready(function() {
 
-    var rotationCounter = 0;
-    var iframe = $('#player')[0];
-    console.log(iframe);
-    var player = $f(iframe);
-
-
-    $('.up').on('click', function() {
-        rotateFilmBox('up');
-    });
-
-    $('.down').on('click', function() {
-        rotateFilmBox();
+    $('.more-btn').on('click', function() {
+        $(this).find('.more-less').toggle('display');
+        $(this).prev().slideToggle('slow');
     });
 
 
 
 
-
-    // setInterval(rotateFilmBox, 10000);
-    function rotateFilmBox(direction) {
-        player.api('pause');
-        if (direction === 'up') {
-            rotationCounter += 90;
-        } else {
-            rotationCounter -= 90;
-        }
-        $('.cube').css('transform', 'translateZ(-250px) rotateX(' + rotationCounter + 'deg)');
-    }
     scrollspy();
 });
 
@@ -40,9 +20,9 @@ function scrollspy() {
     var skillsShowing = false;
     var skills1 = $('.skills').find('.slideRight');
     var skills2 = $('.skills').find('.slideDown');
-    var fox9ToLoad = $('#fox9').children('.work-holder').children();
-    var jasonShowToLoad = $('#jasonShow').children('.work-holder').children();
-    var filmToLoad = $('#film').children('.work-holder').children();
+    var fox9ToLoad = $('#fox9').children('.work-holder').children('.video-holder');
+    var jasonShowToLoad = $('#jasonShow').children('.work-holder').children('.video-holder');
+    var filmToLoad = $('#film').children('.work-holder').children('.video-holder');
     var lastId;
     var topMenu = $('.scroll-links');
     var topMenuHeight = $('.nav-bar').outerHeight();
@@ -168,4 +148,27 @@ function scrollspy() {
             }, 1000);
         }
     });
+    // FOR ROTATING VIDEO BOX -- NOT IN USE
+
+    // var rotationCounter = 0;
+    // var iframe = $('#player')[0];
+    // console.log(iframe);
+    // var player = $f(iframe);
+    // $('.up').on('click', function() {
+    //     rotateFilmBox('up');
+    // });
+    //
+    // $('.down').on('click', function() {
+    //     rotateFilmBox();
+    // });
+    // setInterval(rotateFilmBox, 10000);
+    // function rotateFilmBox(direction) {
+    //     player.api('pause');
+    //     if (direction === 'up') {
+    //         rotationCounter += 90;
+    //     } else {
+    //         rotationCounter -= 90;
+    //     }
+    //     $('.cube').css('transform', 'translateZ(-250px) rotateX(' + rotationCounter + 'deg)');
+    // }
 }
