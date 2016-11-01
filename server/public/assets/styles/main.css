@@ -1126,6 +1126,8 @@ button {
     filter: grayscale(0); }
   .experience p {
     color: #f4f7f9; }
+  .experience .skills {
+    margin-top: 40px; }
   .experience .job-bars {
     margin-bottom: 10px;
     height: 140px; }
