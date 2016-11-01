@@ -1191,13 +1191,15 @@ button {
       margin: 0 2vw 0 0; }
     .skills-container .slideRight i {
       display: inline;
-      margin: 0 1vw; }
+      margin: 0 1vw 0 1vw;
+      transition: all 0.2s ease; }
     .skills-container .slideRight .negative {
       color: rgba(249, 221, 4, 0.2); }
-    .skills-container .slideRight:hover p, .skills-container .slideRight:hover i {
-      color: #f4f7f9; }
+    .skills-container .slideRight:hover i {
+      color: #04c3d8;
+      margin: 0 1.5vw 0 1vw; }
     .skills-container .slideRight:hover .negative {
-      color: rgba(244, 247, 249, 0.2); }
+      color: rgba(4, 195, 216, 0.2); }
 
 .undone {
   color: #f4f7f9; }

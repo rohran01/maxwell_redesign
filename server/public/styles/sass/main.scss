@@ -495,7 +495,8 @@ button {
     }
     i {
       display: inline;
-      margin: 0 1vw;
+      margin: 0 1vw 0 1vw;
+      transition: all 0.2s ease;
       // color: $black;
     }
     .negative {
@@ -504,11 +505,12 @@ button {
     &:hover {
       // background: $blue;
       // width: 20%;
-      p, i {
-        color: $white;
+      i {
+        color: $blue;
+        margin: 0 1.5vw 0 1vw;
       }
       .negative {
-        color: rgba($white, 0.2);
+        color: rgba($blue, 0.2);
       }
     }
   }
