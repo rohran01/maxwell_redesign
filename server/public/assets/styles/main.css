@@ -1145,7 +1145,8 @@ button {
       margin: 0;
       color: #484949; }
     .skills-container .slideRight:hover {
-      background: #04c3d8; }
+      background: #04c3d8;
+      width: 20%; }
       .skills-container .slideRight:hover p {
         color: #f4f7f9; }
 
