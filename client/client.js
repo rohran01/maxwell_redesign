@@ -79,6 +79,7 @@ function scrollspy() {
 
         if (!skillsShowing && $('#skills').offset().top < fromBottom) {
             showSkills();
+            console.log('skills');
             skillsShowing = true;
         }
 
@@ -117,7 +118,7 @@ function scrollspy() {
         }
     }
     function showSkills() {
-        var rightMovement = skillsShowing === true ? '-80%' : 0;
+        var rightMovement = skillsShowing === true ? '-120%' : 0;
         var downMovement = skillsShowing === true ? '-620px' : 0;
         for (var i = 0; i < skills1.length; i++) {
             $(skills1[i]).delay(600 * i - (60 * i * i)).animate({
