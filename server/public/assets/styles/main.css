@@ -878,7 +878,7 @@ button {
     border: 1px solid rgba(4, 195, 216, 0.8); }
 
 .section {
-  padding: 8rem 0 7rem; }
+  padding: 6rem 0 5rem; }
   .section .section-heading {
     fill: #f4f7f9;
     height: 9rem;
@@ -1120,8 +1120,6 @@ button {
 
 .skills-container {
   overflow: hidden; }
-  .skills-container.down {
-    height: 600px; }
   .skills-container .slideRight {
     position: relative;
     top: 0;

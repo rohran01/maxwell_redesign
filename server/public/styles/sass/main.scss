@@ -26,7 +26,7 @@ button {
   }
 }
 .section {
-  padding: 8rem 0 7rem;
+  padding: 6rem 0 5rem;
   .section-heading {
     fill: $white;
     height: 9rem;
@@ -368,9 +368,9 @@ button {
 
 .skills-container {
   overflow: hidden;
-  &.down {
-    height: 600px;
-  }
+  // &.down {
+  //   height: 600px;
+  // }
   // .skills-title{
   //   position: absolute;
   //   top: -620px;
@@ -389,7 +389,6 @@ button {
     position: relative;
     top: 0;
     left: -120%;
-    // background: linear-gradient(to bottom right, $blue, $red);
     // background: $yellow;
     margin: 2rem 0;
     color: $yellow;
@@ -434,8 +433,6 @@ button {
       .negative {
         color: rgba($white, 0.6);
       }
-
-
     }
   }
   // .slideDown {
