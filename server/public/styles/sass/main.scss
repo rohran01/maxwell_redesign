@@ -86,7 +86,6 @@ button {
     .label {
       display: none;
       margin: 0;
-      // color: $yellow;
       transition: all 0.3s ease;
     }
     &.hovered {
@@ -97,8 +96,6 @@ button {
         color: $yellow;
         fill: $yellow;
         display: block;
-        // border-bottom: 2px solid $blue;
-        // border-top: 2px solid $blue;
       }
     }
     &:active {
