@@ -1149,10 +1149,14 @@ button {
       display: inline;
       margin: 0 1vw;
       color: #484949; }
+    .skills-container .slideRight .negative {
+      color: rgba(72, 73, 73, 0.5); }
     .skills-container .slideRight:hover {
       background: #04c3d8; }
       .skills-container .slideRight:hover p, .skills-container .slideRight:hover i {
         color: #f4f7f9; }
+      .skills-container .slideRight:hover .negative {
+        color: rgba(244, 247, 249, 0.5); }
 
 .undone {
   color: #f4f7f9; }

@@ -419,12 +419,20 @@ button {
       display: inline;
       margin: 0 1vw;
       color: $black;
+
+    }
+    .negative {
+      color: rgba($black, 0.5);
     }
     &:hover {
       background: $blue;
       // width: 20%;
       p, i {
         color: $white;
+
+      }
+      .negative {
+        color: rgba($white, 0.5);
       }
 
 
