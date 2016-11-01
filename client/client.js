@@ -1,16 +1,14 @@
 $(document).ready(function() {
+    moreButtons();
+    scrollspy();
+});
 
+function moreButtons() {
     $('.more-btn').on('click', function() {
         $(this).find('.more-less').toggle('display');
         $(this).prev().slideToggle('slow');
     });
-
-
-
-
-    scrollspy();
-});
-
+}
 
 function scrollspy() {
     var picturesFlipped = false;
