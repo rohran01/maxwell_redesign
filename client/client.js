@@ -106,9 +106,9 @@ function scrollspy() {
         }
 
         if (skillsShowing && id === 'aboutMe') {
-            $('.skills').find('.slideRight').css('left', '-80%');
-            $('.skills').find('.slideDown').css('top', '-620px');
-            $('.skills-title').css('top', '-620px');
+            // $('.skills').find('.slideRight').css('left', '-80%');
+            // $('.skills').find('.slideDown').css('top', '-620px');
+            // $('.skills-title').css('top', '-620px');
             skillsShowing = false;
         }
     });
