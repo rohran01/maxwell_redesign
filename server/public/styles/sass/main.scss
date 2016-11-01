@@ -394,159 +394,60 @@ button {
   }
 }
 
-// .skills-container {
-//   .skill-housing {
-//     display: block;
-//     float: left;
-//     margin-right: 2vw;
-//     // margin-bottom: 2vw;
-//   }
-//   .five-skill {
-//     width: 23vw;
-//     height: calc(23vw + 40px);
-//   }
-//   .four-skill {
-//     width: 17vw;
-//     height: calc(17vw + 40px);
-//     padding-top: 6vw;
-//   }
-//   .three-skill {
-//     width: 11vw;
-//     height: calc(11vw + 40px);
-//     padding-top: 12vw;
-//   }
-//   .two-skill {
-//     width: 6vw;
-//     height: calc(6vw + 40px);
-//     padding-top: 17vw;
-//   }
-//   .skill {
-//     width: 100%;
-//     height: calc(100% - 40px);
-//     border-radius: 100%;
-//     background-color: $white;
-//     position: relative;
-//     p {
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       color: $black;
-//       font-size: 3vw;
-//     }
-//   }
-// }
-
-
-.skills-container {
-  overflow: hidden;
+.slideRight {
+  position: relative;
+  // top: 0;
+  // left: -120%;
+  width: 50%;
+  display: block;
+  float: left;
+  height: 40px;
+  // background: $yellow;
+  margin: 2rem 0;
+  color: $yellow;
+  padding: 1rem 0;
+  transition: all 0.2s ease;
+  // &.five {
+  //   width: 100%;
+  // }
+  // &.four {
+  //   width: 80%;
+  // }
+  // &.three {
+  //   width: 60%;
+  // }
+  // &.two {
+  //   width: 40%;
+  // }
+  // &.one {
+  //   width: 20%;
+  // }
   p {
-    color: $white;
+    display: inline;
+    margin: 0 2vw 0 0;
+    // color: $black;
   }
-  // &.down {
-  //   height: 600px;
-  // }
-  // .skills-title{
-  //   position: absolute;
-  //   top: -620px;
-  //   left: calc(100% - 6rem);
-  //   h2 {
-  //     color: $white;
-  //     width: 2rem;
-  //     word-wrap: break-word;
-  //   }
-  //   &.down {
-  //     right: calc(100% - 6rem);
-  //     left: 0;
-  //   }
-  // }
-  .slideRight {
-    position: relative;
-    // top: 0;
-    // left: -120%;
-    width: 50%;
-    display: block;
-    float: left;
-    height: 40px;
-    // background: $yellow;
-    margin: 2rem 0;
-    color: $yellow;
-    padding: 1rem 0;
+  i {
+    display: inline;
+    margin: 0 1vw 0 1vw;
     transition: all 0.2s ease;
-    // &.five {
-    //   width: 100%;
-    // }
-    // &.four {
-    //   width: 80%;
-    // }
-    // &.three {
-    //   width: 60%;
-    // }
-    // &.two {
-    //   width: 40%;
-    // }
-    // &.one {
-    //   width: 20%;
-    // }
-    p {
-      display: inline;
-      margin: 0 2vw 0 0;
-      // color: $black;
-    }
+    // color: $black;
+  }
+  .negative {
+    color: rgba($yellow, 0.2);
+  }
+  &:hover {
+    // background: $blue;
+    // width: 20%;
     i {
-      display: inline;
-      margin: 0 1vw 0 1vw;
-      transition: all 0.2s ease;
-      // color: $black;
+      color: $blue;
+      margin: 0 1.5vw 0 1vw;
     }
     .negative {
-      color: rgba($yellow, 0.2);
-    }
-    &:hover {
-      // background: $blue;
-      // width: 20%;
-      i {
-        color: $blue;
-        margin: 0 1.5vw 0 1vw;
-      }
-      .negative {
-        color: rgba($blue, 0.2);
-      }
+      color: rgba($blue, 0.2);
     }
   }
-  // .slideDown {
-  //   position: relative;
-  //   float: left;
-  //   width: 1rem;
-  //   top: -620px;
-  //   left: 6rem;
-  //   background: linear-gradient(to bottom right, $blue, $red);
-  //   margin: 0 4rem 0 0;
-  //   color: $white;
-  //   padding: 1rem 2rem;
-  //   &.five {
-  //     height: 100%;
-  //   }
-  //   &.four {
-  //     height: 80%;
-  //   }
-  //   &.three {
-  //     height: 60%;
-  //   }
-  //   &.two {
-  //     height: 40%;
-  //   }
-  //   &.one {
-  //     height: 20%;
-  //   }
-  //   p {
-  //     transform: rotate(90deg);
-  //     margin: 20px 0 0 -30px;
-  //     width: 70px;
-  //   }
-  // }
 }
-
 .undone {
   color: $white;
   &:hover {
