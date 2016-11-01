@@ -331,7 +331,7 @@ button {
       display: block;
       float: left;
       height: 40px;
-      border: 1px solid $white;
+      border: 1px solid $yellow;
       position: relative;
       transition: all 0.2s ease;
       &:hover {
@@ -425,7 +425,7 @@ button {
   p {
     display: inline;
     margin: 0 2vw 0 0;
-    // color: $black;
+    color: $white;
   }
   i {
     display: inline;
