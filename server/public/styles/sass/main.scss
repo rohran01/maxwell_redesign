@@ -58,7 +58,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 12.5%;
+    width: 11%;
     text-align: center;
     padding: 2rem 0;
     color: $white;
@@ -121,13 +121,16 @@ button {
     float: right;
     padding: 2rem 1%;
     margin: 0;
-    width: calc(10.5% - 2px);
+    width: calc(14% - 2px);
     border-left: solid 1px $white;
     a {
       margin: 0 1rem;
       cursor: pointer;
       color: $white;
       transition: all 0.2s ease;
+      height: 32px;
+      display: block;
+      float: left;
       &:hover {
         color: $yellow;
       }
@@ -137,7 +140,7 @@ button {
 
 
 .photo {
-  margin-top: 72px;
+  margin-top: calc(4rem + 32px);
   padding: 0;
   position: relative;
   img {
