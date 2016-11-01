@@ -1115,65 +1115,74 @@ button {
   padding-bottom: 0;
   box-shadow: 0px 36px 84px -16px rgba(244, 247, 249, 0.15); }
 
-.experience-container p {
-  color: #f4f7f9; }
-.experience-container .job-bars {
-  margin-bottom: 10px;
-  height: 140px; }
-  .experience-container .job-bars .layer {
+.experience {
+  -webkit-filter: grayscale(1);
+  /* Old WebKit */
+  filter: grayscale(1);
+  transition: -webkit-filter 0.8s ease; }
+  .experience:hover {
+    -webkit-filter: grayscale(0);
+    /* Old WebKit */
+    filter: grayscale(0); }
+  .experience p {
+    color: #f4f7f9; }
+  .experience .job-bars {
     margin-bottom: 10px;
-    height: 40px; }
-  .experience-container .job-bars .job {
-    display: block;
-    float: left;
-    height: 40px;
-    border: 1px solid #f9dd04;
-    background-color: #f9dd04;
-    position: relative;
-    transition: all 0.2s ease; }
-    .experience-container .job-bars .job:hover {
-      background-color: #04c3d8;
-      border-color: #04c3d8; }
-      .experience-container .job-bars .job:hover p {
-        color: #484949; }
-  .experience-container .job-bars .job-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #484949; }
-  .experience-container .job-bars .ifp {
-    width: calc((100% / 6) - 2px);
-    margin: 0 0.5% 0 calc(100% / 3 - 0.5%); }
-  .experience-container .job-bars .undone {
-    width: calc(24.5% - 2px);
-    margin: 0 0.5% 0 25%; }
-  .experience-container .job-bars .tcpg {
-    width: calc((100% / 6) - 2px);
-    margin: 0 0 0 0.5%; }
-  .experience-container .job-bars .mcad {
-    width: calc(49.5% - 2px);
-    margin: 0 0.5% 0 0; }
-  .experience-container .job-bars .threem {
-    width: calc(24% - 2px);
-    margin: 0 0.5%; }
-  .experience-container .job-bars .fox {
-    width: calc(24.5% - 2px);
-    margin: 0 0 0 0.5%; }
-.experience-container .timeline {
-  width: 100%;
-  border-top: 1px solid #f4f7f9; }
-  .experience-container .timeline .time-chunk {
-    display: block;
-    float: left;
-    height: 50px;
-    width: calc(100% / 3); }
-  .experience-container .timeline .first {
-    text-align: left; }
-  .experience-container .timeline .middle {
-    text-align: center; }
-  .experience-container .timeline .last {
-    text-align: right; }
+    height: 140px; }
+    .experience .job-bars .layer {
+      margin-bottom: 10px;
+      height: 40px; }
+    .experience .job-bars .job {
+      display: block;
+      float: left;
+      height: 40px;
+      border: 1px solid #f9dd04;
+      background-color: #f9dd04;
+      position: relative;
+      transition: all 0.2s ease; }
+      .experience .job-bars .job:hover {
+        background-color: #04c3d8;
+        border-color: #04c3d8; }
+        .experience .job-bars .job:hover p {
+          color: #484949; }
+    .experience .job-bars .job-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #484949; }
+    .experience .job-bars .ifp {
+      width: calc((100% / 6) - 2px);
+      margin: 0 0.5% 0 calc(100% / 3 - 0.5%); }
+    .experience .job-bars .undone {
+      width: calc(24.5% - 2px);
+      margin: 0 0.5% 0 25%; }
+    .experience .job-bars .tcpg {
+      width: calc((100% / 6) - 2px);
+      margin: 0 0 0 0.5%; }
+    .experience .job-bars .mcad {
+      width: calc(49.5% - 2px);
+      margin: 0 0.5% 0 0; }
+    .experience .job-bars .threem {
+      width: calc(24% - 2px);
+      margin: 0 0.5%; }
+    .experience .job-bars .fox {
+      width: calc(24.5% - 2px);
+      margin: 0 0 0 0.5%; }
+  .experience .timeline {
+    width: 100%;
+    border-top: 1px solid #f4f7f9; }
+    .experience .timeline .time-chunk {
+      display: block;
+      float: left;
+      height: 50px;
+      width: calc(100% / 3); }
+    .experience .timeline .first {
+      text-align: left; }
+    .experience .timeline .middle {
+      text-align: center; }
+    .experience .timeline .last {
+      text-align: right; }
 
 .slideRight {
   position: relative;

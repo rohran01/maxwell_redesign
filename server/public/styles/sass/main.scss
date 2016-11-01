@@ -316,7 +316,14 @@ button {
   box-shadow: 0px 36px 84px -16px rgba($white, 0.15);
 }
 
-.experience-container {
+.experience {
+  -webkit-filter: grayscale(1); /* Old WebKit */
+  filter: grayscale(1);
+  transition: -webkit-filter 0.8s ease;
+  &:hover {
+    -webkit-filter: grayscale(0); /* Old WebKit */
+    filter: grayscale(0);
+  }
   p {
     color: $white;
   }
