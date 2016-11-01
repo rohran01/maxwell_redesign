@@ -943,12 +943,12 @@ button {
   .nav-bar li.contacts {
     display: block;
     float: right;
-    padding: 2rem 1%;
+    padding: 2rem 0;
     margin: 0;
     width: calc(14% - 2px);
     border-left: solid 1px #f4f7f9; }
     .nav-bar li.contacts a {
-      margin: 0 1rem;
+      margin: 0 1vw;
       cursor: pointer;
       color: #f4f7f9;
       transition: all 0.2s ease;
