@@ -411,13 +411,19 @@ button {
       width: 20%;
     }
     p {
-      margin: 0;
+      display: inline;
+      margin: 0 2vw 0 0;
+      color: $black;
+    }
+    i {
+      display: inline;
+      margin: 0 1vw;
       color: $black;
     }
     &:hover {
       background: $blue;
-      width: 20%;
-      p {
+      // width: 20%;
+      p, i {
         color: $white;
       }
 

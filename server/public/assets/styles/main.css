@@ -1142,12 +1142,16 @@ button {
     .skills-container .slideRight.one {
       width: 20%; }
     .skills-container .slideRight p {
-      margin: 0;
+      display: inline;
+      margin: 0 2vw 0 0;
+      color: #484949; }
+    .skills-container .slideRight i {
+      display: inline;
+      margin: 0 1vw;
       color: #484949; }
     .skills-container .slideRight:hover {
-      background: #04c3d8;
-      width: 20%; }
-      .skills-container .slideRight:hover p {
+      background: #04c3d8; }
+      .skills-container .slideRight:hover p, .skills-container .slideRight:hover i {
         color: #f4f7f9; }
 
 .undone {
