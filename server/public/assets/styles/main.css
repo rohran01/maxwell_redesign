@@ -1128,10 +1128,12 @@ button {
     float: left;
     height: 40px;
     border: 1px solid #f9dd04;
+    background-color: #f9dd04;
     position: relative;
     transition: all 0.2s ease; }
     .experience-container .job-bars .job:hover {
-      background-color: #04c3d8; }
+      background-color: #04c3d8;
+      border-color: #04c3d8; }
       .experience-container .job-bars .job:hover p {
         color: #484949; }
   .experience-container .job-bars .job-name {
@@ -1139,7 +1141,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f9dd04; }
+    color: #484949; }
   .experience-container .job-bars .ifp {
     width: calc((100% / 6) - 2px);
     margin: 0 0.5% 0 calc(100% / 3 - 0.5%); }
