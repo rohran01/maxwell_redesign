@@ -1138,13 +1138,11 @@ button {
       display: block;
       float: left;
       height: 40px;
-      border: 1px solid #f9dd04;
       background-color: #f9dd04;
       position: relative;
       transition: all 0.2s ease; }
       .experience .job-bars .job:hover {
-        background-color: #04c3d8;
-        border-color: #04c3d8; }
+        background-color: #04c3d8; }
         .experience .job-bars .job:hover p {
           color: #484949; }
     .experience .job-bars .job-name {
@@ -1154,22 +1152,22 @@ button {
       transform: translate(-50%, -50%);
       color: #484949; }
     .experience .job-bars .ifp {
-      width: calc((100% / 6) - 2px);
+      width: calc(100% / 6);
       margin: 0 0.5% 0 calc(100% / 3 - 0.5%); }
     .experience .job-bars .undone {
-      width: calc(24.5% - 2px);
+      width: 24.5%;
       margin: 0 0.5% 0 25%; }
     .experience .job-bars .tcpg {
-      width: calc((100% / 6) - 2px);
+      width: calc(100% / 6);
       margin: 0 0 0 0.5%; }
     .experience .job-bars .mcad {
-      width: calc(49.5% - 2px);
+      width: 49.5%;
       margin: 0 0.5% 0 0; }
     .experience .job-bars .threem {
-      width: calc(24% - 2px);
+      width: 24%;
       margin: 0 0.5%; }
     .experience .job-bars .fox {
-      width: calc(24.5% - 2px);
+      width: 24.5%;
       margin: 0 0 0 0.5%; }
   .experience .timeline {
     width: 100%;
