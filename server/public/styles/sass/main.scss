@@ -33,6 +33,7 @@ button {
     display: block;
     margin-bottom: 5rem;
     transition: all 0.4s ease;
+    max-width: 100%;
   }
   &:hover {
     .section-heading {
