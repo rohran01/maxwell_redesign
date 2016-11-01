@@ -390,49 +390,49 @@ button {
     top: 0;
     left: -120%;
     // background: linear-gradient(to bottom right, $blue, $red);
-    background: $yellow;
+    // background: $yellow;
     margin: 2rem 0;
-    color: $white;
-    padding: 1rem 2rem;
+    color: $yellow;
+    padding: 1rem 0;
     transition: all 0.2s ease;
-    &.five {
-      width: 100%;
-    }
-    &.four {
-      width: 80%;
-    }
-    &.three {
-      width: 60%;
-    }
-    &.two {
-      width: 40%;
-    }
-    &.one {
-      width: 20%;
-    }
+    // &.five {
+    //   width: 100%;
+    // }
+    // &.four {
+    //   width: 80%;
+    // }
+    // &.three {
+    //   width: 60%;
+    // }
+    // &.two {
+    //   width: 40%;
+    // }
+    // &.one {
+    //   width: 20%;
+    // }
     p {
       display: inline;
       margin: 0 2vw 0 0;
-      color: $black;
+      // color: $black;
     }
     i {
       display: inline;
       margin: 0 1vw;
-      color: $black;
+      // color: $black;
 
     }
     .negative {
-      color: rgba($black, 0.5);
+      color: rgba($yellow, 0.6);
     }
     &:hover {
-      background: $blue;
+      // background: $blue;
       // width: 20%;
       p, i {
         color: $white;
 
       }
       .negative {
-        color: rgba($white, 0.5);
+        color: rgba($white, 0.6);
       }
 
 
