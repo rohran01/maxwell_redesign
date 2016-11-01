@@ -47,7 +47,6 @@ button {
   position: fixed;
   border: 1px solid $white;
   width: calc(100% - 2px);
-  padding-left: 0.5rem;
   background-color: rgba($black, 0.8);
   ul {
     list-style-type: none;
@@ -120,8 +119,9 @@ button {
   li.contacts {
     display: block;
     float: right;
-    padding: 2rem 1rem calc(2rem + 4px) 1rem;
+    padding: 2rem 1%;
     margin: 0;
+    width: calc(10.5% - 2px);
     border-left: solid 1px $white;
     a {
       margin: 0 1rem;
@@ -137,7 +137,7 @@ button {
 
 
 .photo {
-  margin-top: 78px;
+  margin-top: 72px;
   padding: 0;
   position: relative;
   img {
