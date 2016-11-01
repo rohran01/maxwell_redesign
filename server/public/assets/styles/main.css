@@ -1193,11 +1193,11 @@ button {
       display: inline;
       margin: 0 1vw; }
     .skills-container .slideRight .negative {
-      color: rgba(249, 221, 4, 0.4); }
+      color: rgba(249, 221, 4, 0.2); }
     .skills-container .slideRight:hover p, .skills-container .slideRight:hover i {
       color: #f4f7f9; }
     .skills-container .slideRight:hover .negative {
-      color: rgba(244, 247, 249, 0.4); }
+      color: rgba(244, 247, 249, 0.2); }
 
 .undone {
   color: #f4f7f9; }
