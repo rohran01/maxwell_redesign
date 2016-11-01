@@ -893,7 +893,8 @@ button {
   position: fixed;
   border: 1px solid #f4f7f9;
   width: calc(100% - 2px);
-  background-color: rgba(72, 73, 73, 0.8); }
+  background-color: rgba(72, 73, 73, 0.8);
+  padding-left: 1%; }
   .nav-bar ul {
     list-style-type: none; }
   .nav-bar .name:hover {
@@ -902,7 +903,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 11%;
+    width: 12%;
     text-align: center;
     padding: 2rem 0;
     color: #f4f7f9;
@@ -955,7 +956,7 @@ button {
       display: block;
       float: left; }
       .nav-bar li.contacts a:hover {
-        color: #f9dd04; }
+        color: #F93959; }
 
 .photo {
   margin-top: calc(4rem + 32px);
@@ -1117,6 +1118,39 @@ button {
 .skills-container p, .experience-container p {
   text-align: center;
   color: #f4f7f9; }
+
+.skills-container .skill-housing {
+  display: block;
+  float: left;
+  margin-right: 2vw; }
+.skills-container .five-skill {
+  width: 23vw;
+  height: calc(23vw + 40px); }
+.skills-container .four-skill {
+  width: 17vw;
+  height: calc(17vw + 40px);
+  padding-top: 6vw; }
+.skills-container .three-skill {
+  width: 11vw;
+  height: calc(11vw + 40px);
+  padding-top: 12vw; }
+.skills-container .two-skill {
+  width: 6vw;
+  height: calc(6vw + 40px);
+  padding-top: 17vw; }
+.skills-container .skill {
+  width: 100%;
+  height: calc(100% - 40px);
+  border-radius: 100%;
+  background-color: #f4f7f9;
+  position: relative; }
+  .skills-container .skill p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #484949;
+    font-size: 3vw; }
 
 .undone {
   color: #f4f7f9; }

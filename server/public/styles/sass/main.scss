@@ -48,6 +48,7 @@ button {
   border: 1px solid $white;
   width: calc(100% - 2px);
   background-color: rgba($black, 0.8);
+  padding-left: 1%;
   ul {
     list-style-type: none;
   }
@@ -58,7 +59,7 @@ button {
     margin: 0;
     display: block;
     float: left;
-    width: 11%;
+    width: 12%;
     text-align: center;
     padding: 2rem 0;
     color: $white;
@@ -129,7 +130,7 @@ button {
       display: block;
       float: left;
       &:hover {
-        color: $yellow;
+        color: $red;
       }
     }
   }
@@ -321,6 +322,50 @@ button {
     color: $white;
   }
 }
+
+.skills-container {
+  .skill-housing {
+    display: block;
+    float: left;
+    margin-right: 2vw;
+    // margin-bottom: 2vw;
+  }
+  .five-skill {
+    width: 23vw;
+    height: calc(23vw + 40px);
+  }
+  .four-skill {
+    width: 17vw;
+    height: calc(17vw + 40px);
+    padding-top: 6vw;
+  }
+  .three-skill {
+    width: 11vw;
+    height: calc(11vw + 40px);
+    padding-top: 12vw;
+  }
+  .two-skill {
+    width: 6vw;
+    height: calc(6vw + 40px);
+    padding-top: 17vw;
+  }
+  .skill {
+    width: 100%;
+    height: calc(100% - 40px);
+    border-radius: 100%;
+    background-color: $white;
+    position: relative;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $black;
+      font-size: 3vw;
+    }
+  }
+}
+
 
 // .skills-container {
 //   overflow: hidden;
