@@ -130,7 +130,7 @@ button {
       display: block;
       float: left;
       &:hover {
-        color: $red;
+        color: $blue;
       }
     }
   }
@@ -316,9 +316,81 @@ button {
   box-shadow: 0px 36px 84px -16px rgba($white, 0.15);
 }
 
-.skills-container, .experience-container {
+.experience-container {
   p {
     color: $white;
+  }
+  .job-bars {
+    margin-bottom: 10px;
+    height: 140px;
+    .layer{
+      margin-bottom: 10px;
+      height: 40px;
+    }
+    .job {
+      display: block;
+      float: left;
+      height: 40px;
+      border: 1px solid $white;
+      position: relative;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: $blue;
+        p {
+          color: $black;
+        }
+      }
+    }
+
+    .job-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .ifp {
+      width: calc((100% / 6) - 2px);
+      margin: 0 0.5% 0 calc(100% / 3 - 0.5%);
+    }
+    .undone {
+      width: calc(24.5% - 2px);
+      margin: 0 0.5% 0 25%;
+    }
+    .tcpg {
+      width: calc((100% / 6) - 2px);
+      margin: 0 0 0 0.5%;
+    }
+    .mcad {
+      width: calc(49.5% - 2px);
+      margin: 0 0.5% 0 0;
+    }
+    .threem {
+      width: calc(24% - 2px);
+      margin: 0 0.5%;
+    }
+    .fox {
+      width: calc(24.5% - 2px);
+      margin: 0 0 0 0.5%;
+    }
+  }
+  .timeline {
+    width: 100%;
+    border-top: 1px solid $white;
+    .time-chunk {
+      display: block;
+      float: left;
+      height: 50px;
+      width: calc(100% / 3);
+    }
+    .first {
+      text-align: left;
+    }
+    .middle {
+      text-align: center;
+    }
+    .last {
+      text-align: right;
+    }
   }
 }
 
@@ -368,6 +440,9 @@ button {
 
 .skills-container {
   overflow: hidden;
+  p {
+    color: $white;
+  }
   // &.down {
   //   height: 600px;
   // }
@@ -387,8 +462,12 @@ button {
   // }
   .slideRight {
     position: relative;
-    top: 0;
-    left: -120%;
+    // top: 0;
+    // left: -120%;
+    width: 50%;
+    display: block;
+    float: left;
+    height: 40px;
     // background: $yellow;
     margin: 2rem 0;
     color: $yellow;
@@ -418,20 +497,18 @@ button {
       display: inline;
       margin: 0 1vw;
       // color: $black;
-
     }
     .negative {
-      color: rgba($yellow, 0.6);
+      color: rgba($yellow, 0.4);
     }
     &:hover {
       // background: $blue;
       // width: 20%;
       p, i {
         color: $white;
-
       }
       .negative {
-        color: rgba($white, 0.6);
+        color: rgba($white, 0.4);
       }
     }
   }

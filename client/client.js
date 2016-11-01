@@ -78,7 +78,7 @@ function scrollspy() {
         }
 
         if (!skillsShowing && $('#skills').offset().top < fromBottom) {
-            showSkills();
+            // showSkills();
             console.log('skills');
             skillsShowing = true;
         }
