@@ -93,6 +93,7 @@ function scrollspy() {
         if (fox9Activated && $(window).scrollTop() < 200) {
             $('#fox9').children('.work-holder').children('.work-holder').fadeTo(0, 0);
             fox9Activated = false;
+
         }
 
         if (jasonShowActivated && id === 'fox9') {
