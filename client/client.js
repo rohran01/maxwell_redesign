@@ -91,17 +91,17 @@ function scrollspy() {
         }
 
         if (fox9Activated && $(window).scrollTop() < 200) {
-            $('#fox9').children('.work-holder').children().fadeTo(0, 0);
+            $('#fox9').children('.work-holder').children('.work-holder').fadeTo(0, 0);
             fox9Activated = false;
         }
 
         if (jasonShowActivated && id === 'fox9') {
-            $('#jasonShow').children('.work-holder').children().fadeTo(0, 0);
+            $('#jasonShow').children('.work-holder').children('.work-holder').fadeTo(0, 0);
             jasonShowActivated = false;
         }
 
         if (filmActivated && id === 'jasonShow') {
-            $('#film').children('.work-holder').children().fadeTo(0, 0);
+            $('#film').children('.work-holder').children('.work-holder').fadeTo(0, 0);
             filmActivated = false;
         }
 

@@ -1088,6 +1088,9 @@ button {
       /* Old WebKit */
       filter: grayscale(0); }
 
+.video-holder.video-more {
+  opacity: 1; }
+
 .more-btn {
   width: calc(100% - 4px);
   height: 50px;
@@ -1102,7 +1105,6 @@ button {
     display: none; }
 
 .extra-videos {
-  height: 400px;
   display: none; }
 
 .photo, .fox9, .jasonShow, .film {

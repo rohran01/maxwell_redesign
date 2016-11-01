@@ -287,6 +287,10 @@ button {
   }
 }
 
+.video-holder.video-more {
+  opacity: 1;
+}
+
 .more-btn {
   width: calc(100% - 4px);
   height: 50px;
@@ -303,7 +307,6 @@ button {
   }
 }
 .extra-videos {
-  height: 400px;
   display: none;
 }
 
