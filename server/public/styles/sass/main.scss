@@ -443,7 +443,7 @@ button {
   }
   i {
     display: inline;
-    margin: 0 1vw 0 1vw;
+    margin: 0 2%;
     transition: all 0.2s ease;
     // color: $black;
   }
@@ -455,7 +455,7 @@ button {
     // width: 20%;
     i {
       color: $blue;
-      margin: 0 1.5vw 0 1vw;
+      margin: 0 4% 0 2%;
     }
     .negative {
       color: rgba($blue, 0.2);
